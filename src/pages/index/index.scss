@@ -1,0 +1,41 @@
+@import "_var.scss";
+@import "../../common/_common.scss";
+
+#wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 957px;
+    margin: 0 auto 20px;
+    padding: 0;
+    background: #fff url(http://7xu36i.com1.z0.glb.clouddn.com/new_header.png) 0 0 no-repeat;
+}
+#header {
+    display: block;
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: 310px;
+    background-position: 5px 40px;
+    background-repeat: no-repeat;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sitenav li {
+    float: left;
+    display: inline;
+}
+.sitenav a {
+    display: block;
+    float: left;
+    width: 137px;
+    height: 89px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: 0 0 no-repeat;
+}
+.sitenav .nav-rec {
+    background-position: -160px 0;
+}
