@@ -20,14 +20,14 @@ webpackJsonp([1],{
 	var Layout = __webpack_require__(86);
 	
 	//商品页面
-	var Sign = __webpack_require__(88);
-	var Login = __webpack_require__(90);
-	var Critic = __webpack_require__(92);
+	var Sign = __webpack_require__(94);
+	var Login = __webpack_require__(96);
+	var Critic = __webpack_require__(98);
 	
 	Vue.use(VueRouter);
 	
 	var RootComponent = Vue.extend({
-	  template: __webpack_require__(94),
+	  template: __webpack_require__(100),
 	  data: function data() {
 	    return {};
 	  },
@@ -48,7 +48,7 @@ webpackJsonp([1],{
 	      '/login': {
 	        component: Login
 	      },
-	      '/critic': {
+	      '/critic/:id': {
 	        component: Critic
 	      }
 	    }
@@ -99,7 +99,7 @@ webpackJsonp([1],{
 	
 	
 	// module
-	exports.push([module.id, "#wrapper {\n  overflow: hidden;\n  position: relative;\n  width: 957px;\n  margin: 0 auto 20px;\n  padding: 0;\n  background: #fff url(http://7xu36i.com1.z0.glb.clouddn.com/new_header.png) 0 0 no-repeat;\n}\n\n#header {\n  display: block;\n  position: relative;\n  background-color: transparent;\n  width: 100%;\n  height: 310px;\n  background-position: 5px 40px;\n  background-repeat: no-repeat;\n}\n\nnav ul {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n\n.sitenav li {\n  float: left;\n  display: inline;\n}\n\n.sitenav a {\n  display: block;\n  float: left;\n  width: 137px;\n  height: 89px;\n  text-indent: -9999px;\n  overflow: hidden;\n  background: 0 0 no-repeat;\n}\n\n.sitenav .nav-rec {\n  background-position: -160px 0;\n}\n\n", "", {"version":3,"sources":["/./src/pages/index/index.scss"],"names":[],"mappings":"AAGA;EACI,iBAAA;EACA,mBAAA;EACA,aAAA;EACA,oBAAA;EACA,WAAA;EACA,yFAAA;CAFH;;AAID;EACI,eAAA;EACA,mBAAA;EACA,8BAAA;EACA,YAAA;EACA,cAAA;EACA,8BAAA;EACA,6BAAA;CADH;;AAGG;EACA,UAAA;EACA,WAAA;EACA,iBAAA;CAAH;;AAEQ;EACL,YAAA;EACA,gBAAA;CACH;;AACD;EACI,eAAA;EACA,YAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,iBAAA;EACA,0BAAA;CAEH;;AAAQ;EACL,8BAAA;CAGH","file":"index.scss","sourcesContent":["@import \"_var.scss\";\n@import \"../../common/_common.scss\";\n\n#wrapper {\n    overflow: hidden;\n    position: relative;\n    width: 957px;\n    margin: 0 auto 20px;\n    padding: 0;\n    background: #fff url(http://7xu36i.com1.z0.glb.clouddn.com/new_header.png) 0 0 no-repeat;\n}\n#header {\n    display: block;\n    position: relative;\n    background-color: transparent;\n    width: 100%;\n    height: 310px;\n    background-position: 5px 40px;\n    background-repeat: no-repeat;\n}\nnav ul {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}\n.sitenav li {\n    float: left;\n    display: inline;\n}\n.sitenav a {\n    display: block;\n    float: left;\n    width: 137px;\n    height: 89px;\n    text-indent: -9999px;\n    overflow: hidden;\n    background: 0 0 no-repeat;\n}\n.sitenav .nav-rec {\n    background-position: -160px 0;\n}"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "body {\n  background: #fff;\n}\n\n#wrapper {\n  overflow: hidden;\n  position: relative;\n  width: 957px;\n  margin: 0 auto 20px;\n  padding: 0;\n  background: #fff url(http://7xu36i.com1.z0.glb.clouddn.com/new_header.png) 0 0 no-repeat;\n}\n\n#header {\n  display: block;\n  position: relative;\n  background-color: transparent;\n  width: 100%;\n  height: 310px;\n  background-position: 5px 40px;\n  background-repeat: no-repeat;\n}\n\nnav ul {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n\n.sitenav li {\n  float: left;\n  display: inline;\n}\n\n.sitenav li.last {\n  margin-left: -2px;\n}\n\n.sitenav a {\n  display: block;\n  float: left;\n  width: 137px;\n  height: 89px;\n  text-indent: -9999px;\n  overflow: hidden;\n  background: 0 0 no-repeat;\n}\n\n.sitenav .nav-rec {\n  background-position: -160px 0;\n}\n\n.form {\n  display: block;\n  width: 400px;\n  margin: 40px auto 0 auto;\n  padding: 20px;\n  text-align: center;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  overflow: hidden;\n}\n\n.form div {\n  margin: 10px 0;\n}\n\n.form label {\n  display: inline-block;\n  width: 80px;\n  text-align: right;\n  padding-right: 10px;\n}\n\n.form button {\n  width: 80px;\n}\n\n.form textarea {\n  margin: 0 0 10px 0;\n  width: 100%;\n  height: 90px;\n  border: 1px solid #ccc;\n  outline: none;\n  resize: none;\n}\n\n", "", {"version":3,"sources":["/./src/pages/index/index.scss"],"names":[],"mappings":"AAGA;EACI,iBAAA;CAFH;;AAID;EACI,iBAAA;EACA,mBAAA;EACA,aAAA;EACA,oBAAA;EACA,WAAA;EACA,yFAAA;CADH;;AAGD;EACI,eAAA;EACA,mBAAA;EACA,8BAAA;EACA,YAAA;EACA,cAAA;EACA,8BAAA;EACA,6BAAA;CAAH;;AAED;EACI,UAAA;EACA,WAAA;EACA,iBAAA;CACH;;AACQ;EACL,YAAA;EACA,gBAAA;CAEH;;AAAD;EACI,kBAAA;CAGH;;AADD;EACI,eAAA;EACA,YAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,iBAAA;EACA,0BAAA;CAIH;;AAFD;EACI,8BAAA;CAKH;;AAHD;EACI,eAAA;EACA,aAAA;EACA,yBAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;CAMH;;AAJK;EACF,eAAA;CAOH;;AALD;EACI,sBAAA;EACA,YAAA;EACA,kBAAA;EACA,oBAAA;CAQH;;AANK;EACF,YAAA;CASH;;AAPK;EACF,mBAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;EACA,cAAA;EACA,aAAA;CAUH","file":"index.scss","sourcesContent":["@import \"_var.scss\";\n@import \"../../common/_common.scss\";\n\nbody{\n    background: #fff;\n}\n#wrapper {\n    overflow: hidden;\n    position: relative;\n    width: 957px;\n    margin: 0 auto 20px;\n    padding: 0;\n    background: #fff url(http://7xu36i.com1.z0.glb.clouddn.com/new_header.png) 0 0 no-repeat;\n}\n#header {\n    display: block;\n    position: relative;\n    background-color: transparent;\n    width: 100%;\n    height: 310px;\n    background-position: 5px 40px;\n    background-repeat: no-repeat;\n}\nnav ul {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}\n.sitenav li {\n    float: left;\n    display: inline;\n}\n.sitenav li.last{\n    margin-left: -2px;\n}\n.sitenav a {\n    display: block;\n    float: left;\n    width: 137px;\n    height: 89px;\n    text-indent: -9999px;\n    overflow: hidden;\n    background: 0 0 no-repeat;\n}\n.sitenav .nav-rec {\n    background-position: -160px 0;\n}\n.form{\n    display: block;\n    width: 400px;\n    margin: 40px auto 0 auto;\n    padding: 20px;\n    text-align: center;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.form div{\n    margin: 10px 0;\n}\n.form label{\n    display: inline-block;\n    width: 80px;\n    text-align: right;\n    padding-right:10px;\n}\n.form button{\n    width: 80px;\n}\n.form textarea{\n    margin: 0 0 10px 0;\n    width: 100%;\n    height: 90px;\n    border: 1px solid #ccc;\n    outline: none;\n    resize: none;\n}"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -2826,8 +2826,15 @@ webpackJsonp([1],{
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
 	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
 	var Layout = Vue.extend({
-	  template: __webpack_require__(87),
+	  template: __webpack_require__(93),
 	
 	  data: function data() {
 	    return {};
@@ -2844,27 +2851,228 @@ webpackJsonp([1],{
 /***/ },
 
 /***/ 87:
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "";
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _classCallCheck2 = __webpack_require__(81);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(88);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	__webpack_require__(91);
+	
+	var ToastComp = {
+	  data: function data() {
+	    return {
+	      content: ''
+	    };
+	  },
+	
+	  template: '\n  <div class="toast-container" transition="toast-anim">\n    <div class="content">{{content}}</div>\n  </div>\n  '
+	};
+	
+	var Toast = function () {
+	  function Toast() {
+	    (0, _classCallCheck3.default)(this, Toast);
+	  }
+	
+	  (0, _createClass3.default)(Toast, [{
+	    key: 'show',
+	    value: function show(msg) {
+	      var comp = new Vue(ToastComp);
+	      comp.content = msg;
+	      comp.$mount().$appendTo('body');
+	      setTimeout(function () {
+	        comp.$destroy(true);
+	      }, 2000);
+	    }
+	  }]);
+	  return Toast;
+	}();
+	
+	module.exports = new Toast();
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
 
 /***/ 88:
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+	
+	exports.__esModule = true;
+	
+	var _defineProperty = __webpack_require__(89);
+	
+	var _defineProperty2 = _interopRequireDefault(_defineProperty);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];
+	      descriptor.enumerable = descriptor.enumerable || false;
+	      descriptor.configurable = true;
+	      if ("value" in descriptor) descriptor.writable = true;
+	      (0, _defineProperty2.default)(target, descriptor.key, descriptor);
+	    }
+	  }
+	
+	  return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+	    if (staticProps) defineProperties(Constructor, staticProps);
+	    return Constructor;
+	  };
+	}();
+
+/***/ },
+
+/***/ 89:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(90), __esModule: true };
+
+/***/ },
+
+/***/ 90:
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(30);
+	module.exports = function defineProperty(it, key, desc){
+	  return $.setDesc(it, key, desc);
+	};
+
+/***/ },
+
+/***/ 91:
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(92);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(12)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap&-autoprefixer!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/resolve-url-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./toast.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap&-autoprefixer!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/resolve-url-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./toast.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+
+/***/ 92:
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(11)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".toast-container {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n          justify-content: center;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n}\n\n.toast-container .content {\n  font-size: 0.875rem;\n  padding: 0.625rem;\n  border-radius: 5px;\n  background: #000;\n  color: #fff;\n  max-width: 90%;\n}\n\n.toast-anim-transition {\n  -webkit-transition: all .3s ease;\n  transition: all .3s ease;\n  opacity: 1;\n}\n\n.toast-anim-enter,\n.toast-anim-leave {\n  opacity: 0;\n}\n\n", "", {"version":3,"sources":["/./src/components/toast/toast.scss"],"names":[],"mappings":"AAEA;EACE,gBAAA;EACA,OAAA;EACA,SAAA;EACA,UAAA;EACA,QAAA;EACA,qBAAA;EAAA,sBAAA;EAAA,cAAA;EACA,yBAAA;EAAA,gCAAA;UAAA,wBAAA;EACA,0BAAA;EAAA,4BAAA;UAAA,oBAAA;CADD;;AAPD;EAYI,oBAAA;EACA,kBAAA;EACA,mBAAA;EACA,iBAAA;EACA,YAAA;EACA,eAAA;CADH;;AAKD;EACE,iCAAA;EAAA,yBAAA;EACA,WAAA;CAFD;;AAKD;;EACE,WAAA;CADD","file":"toast.scss","sourcesContent":["@import \"~@common/_common.scss\";\n\n.toast-container {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n\n  .content {\n    font-size: rem(14);\n    padding: rem(10);\n    border-radius: 5px;\n    background: #000;\n    color: #fff;\n    max-width: 90%;\n  }\n}\n\n.toast-anim-transition {\n  transition: all .3s ease;\n  opacity: 1;\n}\n\n.toast-anim-enter, .toast-anim-leave {\n  opacity: 0;\n}\n\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+
+/***/ 93:
+/***/ function(module, exports) {
+
+	module.exports = "<div id=\"wrapper\">\n  <header id=\"header\" role=\"banner\">\n    <nav id=\"nav\" role=\"navigation\" style=\"\n      padding: 200px 0 0 0;\">\n      <ul class=\"sitenav depth_1\">\n        <li class=\"first\">\n          <a class=\"nav-rec\" href=\"http://www.zhexueshuping.com/\">Recent</a>\n        </li>\n        <li>\n          <a class=\"nav-arc\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%93%B2%E5%AD%A6%E4%B9%A6%E8%AF%84\">Articles</a>\n        </li><li>\n          <a class=\"nav-edi\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%90%8D%E5%AE%B6%E8%AE%BF%E8%B0%88\">Reviews</a>\n        </li>\n        <li>\n          <a class=\"nav-qanda\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%AD%A6%E5%AD%90%E9%97%AE%E7%AD%94\">Q&amp;A</a>\n        </li>\n        <li>\n          <a class=\"nav-rev\" href=\"http://www.zhexueshuping.com/articles/new\">Submission</a>\n        </li>\n        <li>\n          <a class=\"nav-abo\" href=\"http://www.zhexueshuping.com/about\">About</a>\n        </li>\n        <li class=\"last\">\n          <a class=\"nav-fre\" href=\"http://www.zhexueshuping.com/donation\">Donation</a>\n        </li>\n      </ul>\n    </nav>\n  </header>\n  <router-view></router-view>\n</div>";
+
+/***/ },
+
+/***/ 94:
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
 	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
 	var Sign = Vue.extend({
-	  template: __webpack_require__(89),
+	  template: __webpack_require__(95),
 	
 	  data: function data() {
-	    return {};
+	    return {
+	      name: '',
+	      password: '',
+	      check: ''
+	    };
 	  },
 	
-	  methods: {},
-	  computed: {},
-	  ready: function ready() {}
+	
+	  methods: {
+	    sign: function sign() {
+	      if (!this.validate()) {
+	        return;
+	      }
+	      var name = this.name;
+	      reqwest({
+	        url: 'http://www.zhexueshuping.com/api/signup',
+	        method: 'POST',
+	        data: {
+	          user: this.user
+	        }
+	      }).then(function (resp) {
+	        Toast.show('注册成功');
+	        localStorage.setItem('TOKEN', resp.token);
+	        localStorage.setItem('NAME', name);
+	        setTimeout(function () {
+	          location.hash = "#!/index/login";
+	        }, 2000);
+	      }).catch(function (e) {
+	        console.error(e);
+	        Toast.show("注册失败");
+	      });
+	    },
+	
+	    validate: function validate() {
+	      if (!this.name) {
+	        Toast.show('请填写名字');
+	        return false;
+	      }
+	      if (!this.password) {
+	        Toast.show('请填写密码');
+	        return false;
+	      }
+	      if (this.password != this.check) {
+	        Toast.show('密码和确认密码保持一致');
+	        return false;
+	      }
+	      return true;
+	    }
+	  },
+	  computed: {
+	    user: function user() {
+	      return {
+	        name: this.name,
+	        password: this.password
+	      };
+	    }
+	  }
 	});
 	
 	module.exports = Sign;
@@ -2872,28 +3080,68 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 89:
+/***/ 95:
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n  \n</div>";
+	module.exports = "<div>\n  <form  class=\"form\">\n    <div><label>姓名</label><input v-model=\"name\" type=\"text\" /></div>\n    <div><label>密码</label><input v-model=\"password\" type=\"password\" /></div>\n    <div><label>确认密码</label><input v-model=\"check\" type=\"password\" /></div>\n    <button @click=\"sign()\">注册</button>\n  </form>\n</div>";
 
 /***/ },
 
-/***/ 90:
+/***/ 96:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
 	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
 	var Login = Vue.extend({
-	  template: __webpack_require__(91),
+	  template: __webpack_require__(97),
 	
 	  data: function data() {
-	    return {};
+	    return {
+	      name: '',
+	      password: ''
+	    };
 	  },
 	
-	  methods: {},
-	  computed: {},
-	  ready: function ready() {}
+	  methods: {
+	    login: function login() {
+	      if (!this.validate()) {
+	        return;
+	      }
+	      reqwest({
+	        url: 'http://www.zhexueshuping.com/api/login?name=' + this.name + "&password=" + this.password,
+	        method: 'POST'
+	      }).then(function (resp) {
+	        Toast.show('登陆成功');
+	        localStorage.setItem('TOKEN', resp.token);
+	        localStorage.setItem('NAME', resp.name);
+	        setTimeout(function () {
+	          location.href = "http://www.zhexueshuping.com";
+	        }, 2000);
+	      }).catch(function (e) {
+	        console.error(e);
+	        Toast.show("登陆失败");
+	      });
+	    },
+	
+	    validate: function validate() {
+	      if (!this.name) {
+	        Toast.show('请填写名字');
+	        return false;
+	      }
+	      if (!this.password) {
+	        Toast.show('请填写密码');
+	        return false;
+	      }
+	      return true;
+	    }
+	  }
 	});
 	
 	module.exports = Login;
@@ -2901,28 +3149,82 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 91:
+/***/ 97:
 /***/ function(module, exports) {
 
-	module.exports = "";
+	module.exports = "<div>\n  <form class=\"form\">\n    <div><label>姓名</label><input v-model=\"name\" type=\"text\" /></div>\n    <div><label>密码</label><input v-model=\"password\" type=\"password\" /></div>\n    <button @click=\"login()\">登陆</button>\n  </form>\n</div>";
 
 /***/ },
 
-/***/ 92:
+/***/ 98:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
 	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
 	var Critic = Vue.extend({
-	  template: __webpack_require__(93),
+	  template: __webpack_require__(99),
 	
 	  data: function data() {
-	    return {};
+	    return {
+	      aid: this.$route.params.id,
+	      critic: '',
+	      name: localStorage.getItem('NAME'),
+	      token: localStorage.getItem('TOKEN')
+	    };
 	  },
 	
-	  methods: {},
-	  computed: {},
-	  ready: function ready() {}
+	  methods: {
+	    submit: function submit() {
+	      if (!this.token) {
+	        Toast.show('请先登录');
+	        setTimeout(function () {
+	          location.hash = "#!/index/login";
+	        }, 2000);
+	        return;
+	      }
+	      if (!this.critic) {
+	        Toast.show('请填写评论');
+	        return;
+	      }
+	      reqwest({
+	        url: 'http://www.zhexueshuping.com/api/comments?comment=' + this.critic + '&article_id=' + this.aid,
+	        method: 'POST',
+	        data: {
+	          comment: this.critic,
+	          article_id: this.aid
+	        },
+	        headers: {
+	          'Authorization': 'Token token=' + this.token + ',name=' + this.name
+	        }
+	      }).then(function (resp) {
+	        Toast.show("发布评论成功");
+	        setTimeout(function () {
+	          location.reload();
+	        }, 2000);
+	      }).catch(function (e) {
+	        console.error(e);
+	        Toast.show("发布评论失败");
+	      });
+	    }
+	  },
+	  ready: function ready() {
+	    reqwest({
+	      url: 'http://www.zhexueshuping.com/api/artilces/' + this.aid + '/comments',
+	      method: 'GET'
+	    }).then(function (resp) {
+	      console.log(resp);
+	    }).catch(function (e) {
+	      console.error(e);
+	      Toast.show("获取评论失败");
+	    });
+	  }
 	});
 	
 	module.exports = Critic;
@@ -2930,17 +3232,17 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 93:
+/***/ 99:
 /***/ function(module, exports) {
 
-	module.exports = "";
+	module.exports = "<div>\n  <form class='form'>\n    <textarea name=\"\" v-model=\"critic\"></textarea>\n    <button @click=\"submit()\">发表评论</button>\n  </form>\n</div>";
 
 /***/ },
 
-/***/ 94:
+/***/ 100:
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n  <div id=\"wrapper\">\n    <header id=\"header\" role=\"banner\">\n      <nav id=\"nav\" role=\"navigation\" style=\"\n        padding: 200px 0 0 0;\">\n        <ul class=\"sitenav depth_1\">\n          <li class=\"first\">\n            <a class=\"nav-rec\" href=\"http://www.zhexueshuping.com/\">Recent</a>\n          </li>\n          <li>\n            <a class=\"nav-arc\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%93%B2%E5%AD%A6%E4%B9%A6%E8%AF%84\">Articles</a>\n          </li><li>\n            <a class=\"nav-edi\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%90%8D%E5%AE%B6%E8%AE%BF%E8%B0%88\">Reviews</a>\n          </li>\n          <li>\n            <a class=\"nav-qanda\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%AD%A6%E5%AD%90%E9%97%AE%E7%AD%94\">Q&amp;A</a>\n          </li>\n          <li>\n            <a class=\"nav-rev\" href=\"http://www.zhexueshuping.com/articles/new\">Submission</a>\n          </li>\n          <li>\n            <a class=\"nav-abo\" href=\"http://www.zhexueshuping.com/about\">About</a>\n          </li>\n          <li class=\"last\">\n            <a class=\"nav-fre\" href=\"http://www.zhexueshuping.com/donation\">Donation</a>\n          </li>\n        </ul>\n      </nav>\n    </header>\n    <router-view></router-view>\n  </div>\n</div>";
+	module.exports = "<div>\n  <router-view></router-view>\n</div>";
 
 /***/ }
 

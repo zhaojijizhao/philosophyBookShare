@@ -1,8 +1,7 @@
 <div>
-  <form>
-    <label>姓名</label><input type="text" />
-    <label>密码</label><input type="password" />
-    <label>确认密码</label><input type="password" />
-    <button>登陆</button>
+  <form class="form">
+    <div><label>姓名</label><input v-model="name" type="text" /></div>
+    <div><label>密码</label><input v-model="password" type="password" /></div>
+    <button @click="login()">登陆</button>
   </form>
 </div>

@@ -76,7 +76,7 @@
 /******/ 			script.charset = 'utf-8';
 /******/ 			script.async = true;
 /******/
-/******/ 			script.src = __webpack_require__.p + "" + ({"1":"index"}[chunkId]||chunkId) + "." + {"1":"d7caa1276fd09aa4adbc"}[chunkId] + ".js";
+/******/ 			script.src = __webpack_require__.p + "" + ({"1":"index"}[chunkId]||chunkId) + "." + {"1":"c239cb56f6be8d5d2959"}[chunkId] + ".js";
 /******/ 			head.appendChild(script);
 /******/ 		}
 /******/ 	};
@@ -12404,8 +12404,6 @@
 	    });
 	  };
 	})(reqwest);
-	
-	utils.setupMTStyleForTesting();
 	
 	module.exports = {
 	  reqwest: reqwest,

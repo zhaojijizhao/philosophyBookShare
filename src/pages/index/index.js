@@ -31,13 +31,13 @@ router.map({
     component: Layout,
     subRoutes: {
       '/sign': {
-        component: Sign,
+        component: Sign
       },
       '/login': {
-        component: Login,
+        component: Login
       },
-      '/critic': {
-        component: Critic,
+      '/critic/:id': {
+        component: Critic
       }
     }
   }

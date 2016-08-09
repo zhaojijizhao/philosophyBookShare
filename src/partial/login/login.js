@@ -8,13 +8,42 @@ var Login = Vue.extend({
 
   data() {
     return {
+      name: '',
+      password: ''
     }
   },
   methods: {
-  },
-  computed: {
-  },
-  ready() {
+    login: function() {
+      if (!this.validate()) {
+        return;
+      }
+      reqwest({
+        url: 'http://www.zhexueshuping.com/api/login?name=' + this.name + "&password=" + this.password,
+        method: 'POST'
+      }).then(function (resp) {
+        Toast.show('登陆成功');
+        localStorage.setItem('TOKEN', resp.token);
+        localStorage.setItem('NAME', resp.name);
+        setTimeout(() => {
+          location.href = "http://www.zhexueshuping.com";
+        }, 2000);
+      }).catch(function (e) {
+        console.error(e);
+        Toast.show("登陆失败");
+      });
+    },
+
+    validate: function() {
+      if (!this.name) {
+        Toast.show('请填写名字');
+        return false;
+      }
+      if (!this.password) {
+        Toast.show('请填写密码');
+        return false;
+      }
+      return true;
+    }
   }
 });
 

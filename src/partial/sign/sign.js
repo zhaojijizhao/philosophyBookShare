@@ -13,32 +13,55 @@ var Sign = Vue.extend({
       check: ''
     }
   },
-  methods: {
-    sign: function(event) {
-      location.hash = "#!/index/login";
-      // reqwest({
-      //   url: '/sign',
-      //   method: 'POST',
-      //   data: {
-      //     name: this.name,
-      //     password: this.password
-      //   },
-      //   contentType: false,
-      //   processData: false
-      // }).then(function (resp) {
-      //   Toast.show('注册成功');
-      // }).catch(function (e) {
-      //   console.error(e);
-      //   Toast.show(JSON.stringify(e));
-      // });
-    },
-    validate: function() {
 
+  methods: {
+    sign: function() {
+      if (!this.validate()) {
+        return;
+      }
+      let name = this.name;
+      reqwest({
+        url: 'http://www.zhexueshuping.com/api/signup',
+        method: 'POST',
+        data: {
+          user: this.user
+        }
+      }).then(function (resp) {
+        Toast.show('注册成功');
+        localStorage.setItem('TOKEN', resp.token);
+        localStorage.setItem('NAME', name);
+        setTimeout(() => {
+          location.hash = "#!/index/login";
+        }, 2000);
+      }).catch(function (e) {
+        console.error(e);
+        Toast.show("注册失败");
+      });
+    },
+
+    validate: function() {
+      if (!this.name) {
+        Toast.show('请填写名字');
+        return false;
+      }
+      if (!this.password) {
+        Toast.show('请填写密码');
+        return false;
+      }
+      if (this.password != this.check) {
+        Toast.show('密码和确认密码保持一致');
+        return false;
+      }
+      return true;
     }
   },
   computed: {
-  },
-  ready() {
+    user: function() {
+      return {
+        name: this.name,
+        password: this.password
+      };
+    }
   }
 });
 
