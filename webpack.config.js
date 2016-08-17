@@ -40,7 +40,8 @@ var config = {
     alias: {
       '@common': path.resolve(__dirname, './src/common'),
       '@component': path.resolve(__dirname, './src/components'),
-      '@partial': path.resolve(__dirname, './src/partial')
+      '@partial': path.resolve(__dirname, './src/partial'),
+      '@module': path.resolve(__dirname, './src/module')
     }
   },
   eslint: {

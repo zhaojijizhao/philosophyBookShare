@@ -75,3 +75,17 @@ nav ul {
     outline: none;
     resize: none;
 }
+
+/* FOOTER
+   ----------------------------------------------------*/
+#footer {clear:both; position:relative; width:857px; height:89px; margin:0 auto; padding:30px 50px 0; font-size:75%; color:#fff; background:url(http://7xu36i.com1.z0.glb.clouddn.com/footer.png) 0 0 no-repeat;}
+#footer p {margin:0;}
+#footer a {color:#fff;}
+#footer .tel,
+#footer .fax,
+#footer .email {margin:0 0 0 10px;}
+#footer #mark {display:block; position:absolute; top:15px; right:70px; width:139px; height:93px; border:none; background:url(http://7xu36i.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg) 0 0 no-repeat;}
+#footer #mark img {display:none;}
+#contact-info {display:none;}
+#footer #site-link {}
+#addthis:hover {background-position:0 -30px;}

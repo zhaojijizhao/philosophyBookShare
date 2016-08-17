@@ -3,13 +3,13 @@
 var {reqwest, utils} = require('@common');
 var Toast = require('@component/toast/toast');
 
-var Critic = Vue.extend({
-  template: require('./critic.html'),
+var Comment = Vue.extend({
+  template: require('./comment.html'),
 
   data() {
     return {
       aid: this.$route.params.id,
-      critic: '',
+      comment: '',
       name: localStorage.getItem('NAME'),
       token: localStorage.getItem('TOKEN')
     }
@@ -23,15 +23,15 @@ var Critic = Vue.extend({
         }, 2000);
         return;
       }
-      if (!this.critic) {
+      if (!this.comment) {
         Toast.show('请填写评论');
         return;
       }
       reqwest({
-        url: 'http://www.zhexueshuping.com/api/comments?comment=' + this.critic + '&article_id=' + this.aid,
+        url: 'http://www.zhexueshuping.com/api/comments?comment=' + this.comment + '&article_id=' + this.aid,
         method: 'POST',
         data: {
-          comment: this.critic,
+          comment: this.comment,
           article_id: this.aid
         },
         headers: {
@@ -61,4 +61,4 @@ var Critic = Vue.extend({
   }
 });
 
-module.exports = Critic;
+module.exports = Comment;

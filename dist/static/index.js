@@ -1,14 +1,93 @@
-webpackJsonp([1],{
-
-/***/ 0:
+webpackJsonp([1],[
+/* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(82);
 
 
 /***/ },
-
-/***/ 82:
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -20,14 +99,22 @@ webpackJsonp([1],{
 	var Layout = __webpack_require__(86);
 	
 	//商品页面
-	var Sign = __webpack_require__(94);
-	var Login = __webpack_require__(96);
-	var Critic = __webpack_require__(98);
+	var Sign = __webpack_require__(98);
+	var Login = __webpack_require__(100);
+	var News = __webpack_require__(102);
+	var Book = __webpack_require__(104);
+	var Expert = __webpack_require__(106);
+	var Qa = __webpack_require__(108);
+	var Contribute = __webpack_require__(110);
+	var About = __webpack_require__(112);
+	var Donate = __webpack_require__(114);
+	var Comment = __webpack_require__(116);
+	var Article = __webpack_require__(118);
 	
 	Vue.use(VueRouter);
 	
 	var RootComponent = Vue.extend({
-	  template: __webpack_require__(100),
+	  template: __webpack_require__(120),
 	  data: function data() {
 	    return {};
 	  },
@@ -48,8 +135,32 @@ webpackJsonp([1],{
 	      '/login': {
 	        component: Login
 	      },
-	      '/critic/:id': {
-	        component: Critic
+	      '/news': {
+	        component: News
+	      },
+	      '/book': {
+	        component: Book
+	      },
+	      '/expert': {
+	        component: Expert
+	      },
+	      '/qa': {
+	        component: Qa
+	      },
+	      '/contribute': {
+	        component: Contribute
+	      },
+	      '/about': {
+	        component: About
+	      },
+	      '/donate': {
+	        component: Donate
+	      },
+	      '/comment/:id': {
+	        component: Comment
+	      },
+	      '/article/:id': {
+	        component: Article
 	      }
 	    }
 	  }
@@ -63,8 +174,7 @@ webpackJsonp([1],{
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-
-/***/ 83:
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -90,8 +200,7 @@ webpackJsonp([1],{
 	}
 
 /***/ },
-
-/***/ 84:
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(11)();
@@ -105,8 +214,7 @@ webpackJsonp([1],{
 
 
 /***/ },
-
-/***/ 85:
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!
@@ -2820,8 +2928,7 @@ webpackJsonp([1],{
 	}));
 
 /***/ },
-
-/***/ 86:
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -2832,9 +2939,11 @@ webpackJsonp([1],{
 	var utils = _require.utils;
 	
 	var Toast = __webpack_require__(87);
+	var PageHead = __webpack_require__(93);
+	var PageFoot = __webpack_require__(95);
 	
 	var Layout = Vue.extend({
-	  template: __webpack_require__(93),
+	  template: __webpack_require__(97),
 	
 	  data: function data() {
 	    return {};
@@ -2842,15 +2951,19 @@ webpackJsonp([1],{
 	
 	  methods: {},
 	  computed: {},
-	  ready: function ready() {}
+	  ready: function ready() {},
+	
+	  components: {
+	    PageHead: PageHead,
+	    PageFoot: PageFoot
+	  }
 	});
 	
 	module.exports = Layout;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-
-/***/ 87:
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -2900,8 +3013,7 @@ webpackJsonp([1],{
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-
-/***/ 88:
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2933,15 +3045,13 @@ webpackJsonp([1],{
 	}();
 
 /***/ },
-
-/***/ 89:
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(90), __esModule: true };
 
 /***/ },
-
-/***/ 90:
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(30);
@@ -2950,8 +3060,7 @@ webpackJsonp([1],{
 	};
 
 /***/ },
-
-/***/ 91:
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2977,8 +3086,7 @@ webpackJsonp([1],{
 	}
 
 /***/ },
-
-/***/ 92:
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(11)();
@@ -2992,15 +3100,79 @@ webpackJsonp([1],{
 
 
 /***/ },
+/* 93 */
+/***/ function(module, exports, __webpack_require__) {
 
-/***/ 93:
-/***/ function(module, exports) {
-
-	module.exports = "<div id=\"wrapper\">\n  <header id=\"header\" role=\"banner\">\n    <nav id=\"nav\" role=\"navigation\" style=\"\n      padding: 200px 0 0 0;\">\n      <ul class=\"sitenav depth_1\">\n        <li class=\"first\">\n          <a class=\"nav-rec\" href=\"http://www.zhexueshuping.com/\">Recent</a>\n        </li>\n        <li>\n          <a class=\"nav-arc\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%93%B2%E5%AD%A6%E4%B9%A6%E8%AF%84\">Articles</a>\n        </li><li>\n          <a class=\"nav-edi\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%90%8D%E5%AE%B6%E8%AE%BF%E8%B0%88\">Reviews</a>\n        </li>\n        <li>\n          <a class=\"nav-qanda\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%AD%A6%E5%AD%90%E9%97%AE%E7%AD%94\">Q&amp;A</a>\n        </li>\n        <li>\n          <a class=\"nav-rev\" href=\"http://www.zhexueshuping.com/articles/new\">Submission</a>\n        </li>\n        <li>\n          <a class=\"nav-abo\" href=\"http://www.zhexueshuping.com/about\">About</a>\n        </li>\n        <li class=\"last\">\n          <a class=\"nav-fre\" href=\"http://www.zhexueshuping.com/donation\">Donation</a>\n        </li>\n      </ul>\n    </nav>\n  </header>\n  <router-view></router-view>\n</div>";
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
+	var PageHead = Vue.component('page-head', {
+	  template: __webpack_require__(94),
+	  data: function data() {
+	    return {};
+	  },
+	
+	  methods: {},
+	  computed: {},
+	  ready: function ready() {}
+	});
+	
+	module.exports = PageHead;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
+/* 94 */
+/***/ function(module, exports) {
 
-/***/ 94:
+	module.exports = "<header id=\"header\" role=\"banner\">\n  <nav id=\"nav\" role=\"navigation\" style=\"\n    padding: 200px 0 0 0;\">\n    <ul class=\"sitenav depth_1\">\n      <li class=\"first\">\n        <a class=\"nav-rec\" href=\"http://www.zhexueshuping.com/\">Recent</a>\n      </li>\n      <li>\n        <a class=\"nav-arc\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%93%B2%E5%AD%A6%E4%B9%A6%E8%AF%84\">Articles</a>\n      </li><li>\n        <a class=\"nav-edi\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%90%8D%E5%AE%B6%E8%AE%BF%E8%B0%88\">Reviews</a>\n      </li>\n      <li>\n        <a class=\"nav-qanda\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%AD%A6%E5%AD%90%E9%97%AE%E7%AD%94\">Q&amp;A</a>\n      </li>\n      <li>\n        <a class=\"nav-rev\" href=\"http://www.zhexueshuping.com/articles/new\">Submission</a>\n      </li>\n      <li>\n        <a class=\"nav-abo\" href=\"http://www.zhexueshuping.com/about\">About</a>\n      </li>\n      <li class=\"last\">\n        <a class=\"nav-fre\" href=\"http://www.zhexueshuping.com/donation\">Donation</a>\n      </li>\n    </ul>\n  </nav>\n</header>";
+
+/***/ },
+/* 95 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
+	var PageFoot = Vue.component('page-foot', {
+	  template: __webpack_require__(96),
+	  data: function data() {
+	    return {};
+	  },
+	
+	  methods: {},
+	  computed: {},
+	  ready: function ready() {}
+	});
+	
+	module.exports = PageFoot;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 96 */
+/***/ function(module, exports) {
+
+	module.exports = "<footer id=\"footer\" class=\"vcard\" role=\"contentinfo\">\n  <p id=\"copyright\" class=\"url fn org\">\n  <a href=\"http://www.zhexueshuping.com/\">Copyright</a> © 2016 <a href=\"/\" id=\"site-link\" class=\"url fn prg\">哲学书评</a> <br>\n  <a href=\"http://www.miitbeian.gov.cn\">苏ICP备16021344号</a>\n  </p>\n  <a href=\"https://site.douban.com/274863/widget/notes/191688682/note/558693421/\" id=\"mark\"><img src=\"http://7xu36i.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg\" class=\"ndmark\" alt=\"二维码\"></a>\n</footer>";
+
+/***/ },
+/* 97 */
+/***/ function(module, exports) {
+
+	module.exports = "<div id=\"wrapper\">\n  <page-head />\n  <router-view></router-view>\n  <page-foot />\n</div>";
+
+/***/ },
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3013,7 +3185,7 @@ webpackJsonp([1],{
 	var Toast = __webpack_require__(87);
 	
 	var Sign = Vue.extend({
-	  template: __webpack_require__(95),
+	  template: __webpack_require__(99),
 	
 	  data: function data() {
 	    return {
@@ -3079,15 +3251,13 @@ webpackJsonp([1],{
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-
-/***/ 95:
+/* 99 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n  <form  class=\"form\">\n    <div><label>姓名</label><input v-model=\"name\" type=\"text\" /></div>\n    <div><label>密码</label><input v-model=\"password\" type=\"password\" /></div>\n    <div><label>确认密码</label><input v-model=\"check\" type=\"password\" /></div>\n    <button @click=\"sign()\">注册</button>\n  </form>\n</div>";
 
 /***/ },
-
-/***/ 96:
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3100,7 +3270,7 @@ webpackJsonp([1],{
 	var Toast = __webpack_require__(87);
 	
 	var Login = Vue.extend({
-	  template: __webpack_require__(97),
+	  template: __webpack_require__(101),
 	
 	  data: function data() {
 	    return {
@@ -3148,15 +3318,13 @@ webpackJsonp([1],{
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-
-/***/ 97:
+/* 101 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n  <form class=\"form\">\n    <div><label>姓名</label><input v-model=\"name\" type=\"text\" /></div>\n    <div><label>密码</label><input v-model=\"password\" type=\"password\" /></div>\n    <button @click=\"login()\">登陆</button>\n  </form>\n</div>";
 
 /***/ },
-
-/***/ 98:
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3168,13 +3336,230 @@ webpackJsonp([1],{
 	
 	var Toast = __webpack_require__(87);
 	
-	var Critic = Vue.extend({
-	  template: __webpack_require__(99),
+	var News = Vue.extend({
+	  template: __webpack_require__(103),
+	
+	  data: function data() {},
+	
+	  methods: {},
+	  ready: function ready() {}
+	});
+	
+	module.exports = News;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 103 */
+/***/ function(module, exports) {
+
+	module.exports = "";
+
+/***/ },
+/* 104 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
+	var Book = Vue.extend({
+	  template: __webpack_require__(105),
+	
+	  data: function data() {},
+	
+	  methods: {},
+	  ready: function ready() {}
+	});
+	
+	module.exports = Book;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 105 */
+/***/ function(module, exports) {
+
+	module.exports = "";
+
+/***/ },
+/* 106 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
+	var Expert = Vue.extend({
+	  template: __webpack_require__(107),
+	
+	  data: function data() {},
+	
+	  methods: {},
+	  ready: function ready() {}
+	});
+	
+	module.exports = Expert;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 107 */
+/***/ function(module, exports) {
+
+	module.exports = "";
+
+/***/ },
+/* 108 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
+	var Qa = Vue.extend({
+	  template: __webpack_require__(109),
+	
+	  data: function data() {},
+	
+	  methods: {},
+	  ready: function ready() {}
+	});
+	
+	module.exports = Qa;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 109 */
+/***/ function(module, exports) {
+
+	module.exports = "";
+
+/***/ },
+/* 110 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
+	var Contribute = Vue.extend({
+	  template: __webpack_require__(111),
+	
+	  data: function data() {},
+	
+	  methods: {},
+	  ready: function ready() {}
+	});
+	
+	module.exports = Contribute;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 111 */
+/***/ function(module, exports) {
+
+	module.exports = "";
+
+/***/ },
+/* 112 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
+	var About = Vue.extend({
+	  template: __webpack_require__(113),
+	
+	  data: function data() {},
+	
+	  methods: {},
+	  ready: function ready() {}
+	});
+	
+	module.exports = About;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 113 */
+/***/ function(module, exports) {
+
+	module.exports = "";
+
+/***/ },
+/* 114 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
+	var Donate = Vue.extend({
+	  template: __webpack_require__(115),
+	
+	  data: function data() {},
+	
+	  methods: {},
+	  ready: function ready() {}
+	});
+	
+	module.exports = Donate;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 115 */
+/***/ function(module, exports) {
+
+	module.exports = "";
+
+/***/ },
+/* 116 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
+	var Comment = Vue.extend({
+	  template: __webpack_require__(117),
 	
 	  data: function data() {
 	    return {
 	      aid: this.$route.params.id,
-	      critic: '',
+	      comment: '',
 	      name: localStorage.getItem('NAME'),
 	      token: localStorage.getItem('TOKEN')
 	    };
@@ -3189,15 +3574,15 @@ webpackJsonp([1],{
 	        }, 2000);
 	        return;
 	      }
-	      if (!this.critic) {
+	      if (!this.comment) {
 	        Toast.show('请填写评论');
 	        return;
 	      }
 	      reqwest({
-	        url: 'http://www.zhexueshuping.com/api/comments?comment=' + this.critic + '&article_id=' + this.aid,
+	        url: 'http://www.zhexueshuping.com/api/comments?comment=' + this.comment + '&article_id=' + this.aid,
 	        method: 'POST',
 	        data: {
-	          comment: this.critic,
+	          comment: this.comment,
 	          article_id: this.aid
 	        },
 	        headers: {
@@ -3227,24 +3612,52 @@ webpackJsonp([1],{
 	  }
 	});
 	
-	module.exports = Critic;
+	module.exports = Comment;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-
-/***/ 99:
+/* 117 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n  <form class='form'>\n    <textarea name=\"\" v-model=\"critic\"></textarea>\n    <button @click=\"submit()\">发表评论</button>\n  </form>\n</div>";
 
 /***/ },
+/* 118 */
+/***/ function(module, exports, __webpack_require__) {
 
-/***/ 100:
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(87);
+	
+	var Article = Vue.extend({
+	  template: __webpack_require__(119),
+	
+	  data: function data() {},
+	
+	  methods: {},
+	  ready: function ready() {}
+	});
+	
+	module.exports = Article;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 119 */
+/***/ function(module, exports) {
+
+	module.exports = "";
+
+/***/ },
+/* 120 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n  <router-view></router-view>\n</div>";
 
 /***/ }
-
-});
+]);
 //# sourceMappingURL=index.js.map
