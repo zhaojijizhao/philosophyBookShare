@@ -1,0 +1,65 @@
+<form>
+  <ul>
+    <li>
+      <h2>原书作者</h2>
+      <input type="text" v-model='article.author' />
+      <span>书评请填所评著作作者姓名，访谈请填“单位、被访谈人姓名与职称”，示例：“XX大学哲学系王小明教授专访”，学子问答请填写学子姓名</span>
+    </li>
+    <li>
+      <h2>标题</h2>
+      <input type="text" v-model='article.title' />
+      <span>书评为所评著作名称，示例：《超越经验主义与理性主义》，包含书名号；访谈为访谈主题；学子问答为问答中标志性的一句话或座右铭</span>
+    </li>
+    <li>
+      <h2>书籍基本参数</h2>
+      <textarea v-model='article.sub_title' >
+      </textarea>
+      <span>书评请填写所评书籍详细参数，示例：陈亚军：《超越经验主义与理性主义》，南京：江苏人民出版社，2014年12月，279页，39元(平装)；访谈请填写被访谈人简介，包括出生日期，研究方向等基本情况；学子问答请填写学子简介</span>
+    </li>
+    <li>
+      <h2>书评撰稿人</h2>
+      <input type="text" v-model='article.reviewer' />
+      <span>书评请填写“书评人 | 撰稿人姓名，工作单位与职称”，例如“书评人 | 小明，南京大学哲学系博士候选人”，访谈请填写“访谈人 | 撰稿人姓名，工作单位与职称”；学子问答请填写“访谈人 | 撰稿人姓名，工作单位与职称”</span>
+    </li>
+    <li>
+      <h2>投稿方向</h2>
+      <select v-model='article.category'>
+        <option value="英美哲学">英美哲学</option>
+        <option value="欧陆哲学">欧陆哲学</option>
+        <option value="中世纪古希腊哲学">中世纪古希腊哲学</option>
+        <option value="宗教哲学">宗教哲学</option>
+        <option value="马克思主义哲学">马克思主义哲学</option>
+        <option value="政治和社会哲学">政治和社会哲学</option>
+        <option value="中国哲学">中国哲学</option>
+        <option value="伦理学">伦理学</option>
+        <option value="比较哲学">比较哲学</option>
+        <option value="艺术哲学">艺术哲学</option>
+        <option value="其他">其他</option>
+        <option value="名家访谈">名家访谈</option>
+        <option value="学子问答">学子问答</option>
+      </select>
+      <span>
+        学术书评需紧扣所评书籍、条理清晰、论述严密、行文晓畅，3000字左右为宜，文章建议布局：书籍总评、每一章概述（或按主题概述，可对思路、观点以及创新之处做出总结和论述）以及书籍存在的问题或不足之处。请采用文中注，避免脚注，所有论述均在正文中完成。如有参考文献，请采用APA格式排版好放置在正文尾部。访谈请保证一定的学术性，并添加被访谈人与访谈人简介，在正文前部。如有特殊情况说明或背景交代，请放置在简介与正文之间。段前不缩进，段与段之间不空行。
+      </span>
+    </li>
+    <li>
+      <h2>正文</h2>
+      <input type="text" v-model='article.content' />
+    </li>
+    <li>
+      <h2>联系方式</h2>
+      <input type="text" v-model='article.contact' />
+      <span>请留下邮箱、手机号等常用联系方式，以便取得联系</span>
+    </li>
+    <li>
+      <h2>备注</h2>
+      <textarea v-model='article.remark' >
+      </textarea>
+      <span>如有特殊情况，请说明；如无，则可不填</span>
+    </li>
+  </ul>
+  <button @click="submit">确认投稿</button>
+</form>
+
+
+
