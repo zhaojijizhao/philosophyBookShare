@@ -4,6 +4,7 @@ require('./polyfill');
 
 var utils = require('./utils')
 var FastClick = require('fastclick');
+
 document.addEventListener('DOMContentLoaded', function() {
   FastClick.attach(document.body);
 }, false);

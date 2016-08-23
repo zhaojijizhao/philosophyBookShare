@@ -16,12 +16,13 @@ var Sign = Vue.extend({
 
   methods: {
     sign: function() {
+      var _this = this;
       if (!this.validate()) {
         return;
       }
       let name = this.name;
       reqwest({
-        url: 'http://www.zhexueshuping.com/api/signup',
+        url: utils.APIPrefix() + 'vvsignup',
         method: 'POST',
         data: {
           user: this.user
@@ -31,7 +32,7 @@ var Sign = Vue.extend({
         localStorage.setItem('TOKEN', resp.token);
         localStorage.setItem('NAME', name);
         setTimeout(() => {
-          location.hash = "#!/index/login";
+          _this.$router.go('/index/login');
         }, 2000);
       }).catch(function (e) {
         console.error(e);

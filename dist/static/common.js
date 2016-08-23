@@ -76,7 +76,7 @@
 /******/ 			script.charset = 'utf-8';
 /******/ 			script.async = true;
 /******/
-/******/ 			script.src = __webpack_require__.p + "" + ({"1":"index"}[chunkId]||chunkId) + "." + {"1":"aca759b2f4706c7e29e6"}[chunkId] + ".js";
+/******/ 			script.src = __webpack_require__.p + "" + ({"1":"index"}[chunkId]||chunkId) + "." + {"1":"7496dc954dbfbfab05d9"}[chunkId] + ".js";
 /******/ 			head.appendChild(script);
 /******/ 		}
 /******/ 	};
@@ -12384,6 +12384,7 @@
 	
 	var utils = __webpack_require__(80);
 	var FastClick = __webpack_require__(6);
+	
 	document.addEventListener('DOMContentLoaded', function () {
 	  FastClick.attach(document.body);
 	}, false);
@@ -13884,11 +13885,26 @@
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
+	var _createClass2 = __webpack_require__(82);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var Utils = function Utils() {
-	  (0, _classCallCheck3.default)(this, Utils);
-	};
+	var Utils = function () {
+	  function Utils() {
+	    (0, _classCallCheck3.default)(this, Utils);
+	  }
+	
+	  (0, _createClass3.default)(Utils, [{
+	    key: "APIPrefix",
+	    value: function APIPrefix() {
+	      var prefix = "http://www.zhexueshuping.com/api/";
+	      return prefix;
+	    }
+	  }]);
+	  return Utils;
+	}();
 	
 	module.exports = new Utils();
 
@@ -13904,6 +13920,53 @@
 	  if (!(instance instanceof Constructor)) {
 	    throw new TypeError("Cannot call a class as a function");
 	  }
+	};
+
+/***/ },
+/* 82 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	exports.__esModule = true;
+	
+	var _defineProperty = __webpack_require__(83);
+	
+	var _defineProperty2 = _interopRequireDefault(_defineProperty);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];
+	      descriptor.enumerable = descriptor.enumerable || false;
+	      descriptor.configurable = true;
+	      if ("value" in descriptor) descriptor.writable = true;
+	      (0, _defineProperty2.default)(target, descriptor.key, descriptor);
+	    }
+	  }
+	
+	  return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+	    if (staticProps) defineProperties(Constructor, staticProps);
+	    return Constructor;
+	  };
+	}();
+
+/***/ },
+/* 83 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(84), __esModule: true };
+
+/***/ },
+/* 84 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(30);
+	module.exports = function defineProperty(it, key, desc){
+	  return $.setDesc(it, key, desc);
 	};
 
 /***/ }

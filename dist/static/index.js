@@ -2,7 +2,7 @@ webpackJsonp([1],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(82);
+	module.exports = __webpack_require__(85);
 
 
 /***/ },
@@ -87,34 +87,37 @@ webpackJsonp([1],[
 /* 79 */,
 /* 80 */,
 /* 81 */,
-/* 82 */
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
 	
-	__webpack_require__(83);
-	var VueRouter = __webpack_require__(85);
+	__webpack_require__(86);
+	var VueRouter = __webpack_require__(89);
 	
 	//框架
-	var Layout = __webpack_require__(86);
+	var Layout = __webpack_require__(90);
 	
 	//商品页面
-	var Sign = __webpack_require__(98);
-	var Login = __webpack_require__(100);
-	var News = __webpack_require__(102);
-	var Book = __webpack_require__(104);
-	var Expert = __webpack_require__(106);
-	var Qa = __webpack_require__(108);
-	var Contribute = __webpack_require__(110);
-	var About = __webpack_require__(112);
-	var Donate = __webpack_require__(114);
-	var Comment = __webpack_require__(116);
-	var Article = __webpack_require__(118);
+	var Sign = __webpack_require__(99);
+	var Login = __webpack_require__(101);
+	var News = __webpack_require__(103);
+	var Book = __webpack_require__(113);
+	var Expert = __webpack_require__(115);
+	var Qa = __webpack_require__(117);
+	var Contribute = __webpack_require__(119);
+	var About = __webpack_require__(121);
+	var Donate = __webpack_require__(123);
+	var Comment = __webpack_require__(125);
+	var Article = __webpack_require__(127);
 	
 	Vue.use(VueRouter);
 	
 	var RootComponent = Vue.extend({
-	  template: __webpack_require__(120),
+	  template: __webpack_require__(129),
 	  data: function data() {
 	    return {};
 	  },
@@ -174,13 +177,13 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 83 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(84);
+	var content = __webpack_require__(87);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(12)(content, {});
@@ -200,7 +203,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 84 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(11)();
@@ -208,13 +211,19 @@ webpackJsonp([1],[
 	
 	
 	// module
-	exports.push([module.id, "body {\n  background: #fff;\n}\n\n#wrapper {\n  overflow: hidden;\n  position: relative;\n  width: 957px;\n  margin: 0 auto 20px;\n  padding: 0;\n  background: #fff url(http://7xu36i.com1.z0.glb.clouddn.com/new_header.png) 0 0 no-repeat;\n}\n\n#header {\n  display: block;\n  position: relative;\n  background-color: transparent;\n  width: 100%;\n  height: 310px;\n  background-position: 5px 40px;\n  background-repeat: no-repeat;\n}\n\nnav ul {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n\n.sitenav li {\n  float: left;\n  display: inline;\n}\n\n.sitenav li.last {\n  margin-left: -2px;\n}\n\n.sitenav a {\n  display: block;\n  float: left;\n  width: 137px;\n  height: 89px;\n  text-indent: -9999px;\n  overflow: hidden;\n  background: 0 0 no-repeat;\n}\n\n.sitenav .nav-rec {\n  background-position: -160px 0;\n}\n\n.form {\n  display: block;\n  width: 400px;\n  margin: 40px auto 0 auto;\n  padding: 20px;\n  text-align: center;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  overflow: hidden;\n}\n\n.form div {\n  margin: 10px 0;\n}\n\n.form label {\n  display: inline-block;\n  width: 80px;\n  text-align: right;\n  padding-right: 10px;\n}\n\n.form button {\n  width: 80px;\n}\n\n.form textarea {\n  margin: 0 0 10px 0;\n  width: 100%;\n  height: 90px;\n  border: 1px solid #ccc;\n  outline: none;\n  resize: none;\n}\n\n", "", {"version":3,"sources":["/./src/pages/index/index.scss"],"names":[],"mappings":"AAGA;EACI,iBAAA;CAFH;;AAID;EACI,iBAAA;EACA,mBAAA;EACA,aAAA;EACA,oBAAA;EACA,WAAA;EACA,yFAAA;CADH;;AAGD;EACI,eAAA;EACA,mBAAA;EACA,8BAAA;EACA,YAAA;EACA,cAAA;EACA,8BAAA;EACA,6BAAA;CAAH;;AAED;EACI,UAAA;EACA,WAAA;EACA,iBAAA;CACH;;AACQ;EACL,YAAA;EACA,gBAAA;CAEH;;AAAD;EACI,kBAAA;CAGH;;AADD;EACI,eAAA;EACA,YAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,iBAAA;EACA,0BAAA;CAIH;;AAFD;EACI,8BAAA;CAKH;;AAHD;EACI,eAAA;EACA,aAAA;EACA,yBAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;CAMH;;AAJK;EACF,eAAA;CAOH;;AALD;EACI,sBAAA;EACA,YAAA;EACA,kBAAA;EACA,oBAAA;CAQH;;AANK;EACF,YAAA;CASH;;AAPK;EACF,mBAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;EACA,cAAA;EACA,aAAA;CAUH","file":"index.scss","sourcesContent":["@import \"_var.scss\";\n@import \"../../common/_common.scss\";\n\nbody{\n    background: #fff;\n}\n#wrapper {\n    overflow: hidden;\n    position: relative;\n    width: 957px;\n    margin: 0 auto 20px;\n    padding: 0;\n    background: #fff url(http://7xu36i.com1.z0.glb.clouddn.com/new_header.png) 0 0 no-repeat;\n}\n#header {\n    display: block;\n    position: relative;\n    background-color: transparent;\n    width: 100%;\n    height: 310px;\n    background-position: 5px 40px;\n    background-repeat: no-repeat;\n}\nnav ul {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}\n.sitenav li {\n    float: left;\n    display: inline;\n}\n.sitenav li.last{\n    margin-left: -2px;\n}\n.sitenav a {\n    display: block;\n    float: left;\n    width: 137px;\n    height: 89px;\n    text-indent: -9999px;\n    overflow: hidden;\n    background: 0 0 no-repeat;\n}\n.sitenav .nav-rec {\n    background-position: -160px 0;\n}\n.form{\n    display: block;\n    width: 400px;\n    margin: 40px auto 0 auto;\n    padding: 20px;\n    text-align: center;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.form div{\n    margin: 10px 0;\n}\n.form label{\n    display: inline-block;\n    width: 80px;\n    text-align: right;\n    padding-right:10px;\n}\n.form button{\n    width: 80px;\n}\n.form textarea{\n    margin: 0 0 10px 0;\n    width: 100%;\n    height: 90px;\n    border: 1px solid #ccc;\n    outline: none;\n    resize: none;\n}"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "@charset \"UTF-8\";\n\nbody {\n  background: #fff;\n}\n\n#wrapper {\n  min-height: auto;\n  max-height: none;\n  width: 957px;\n  margin: 0 auto 20px;\n  padding: 0;\n  background: #fff url(http://7xu36i.com1.z0.glb.clouddn.com/new_header.png) 0 0 no-repeat;\n}\n\n#header {\n  display: block;\n  position: relative;\n  background-color: transparent;\n  width: 100%;\n  height: 310px;\n  background-position: 5px 40px;\n  background-repeat: no-repeat;\n}\n\n#content {\n  -webkit-box-flex: none;\n  -webkit-flex: none;\n  flex: none;\n}\n\nnav ul {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n\n.sitenav li {\n  float: left;\n  display: inline;\n}\n\n.sitenav li.last {\n  margin-left: -2px;\n}\n\n.sitenav a {\n  display: block;\n  float: left;\n  width: 137px;\n  height: 89px;\n  text-indent: -9999px;\n  overflow: hidden;\n  background: 0 0 no-repeat;\n}\n\n.sitenav .nav-rec {\n  background-position: -160px 0;\n}\n\n.form {\n  display: block;\n  box-sizing: border-box;\n  width: 100%;\n  margin: 40px auto 0 auto;\n  padding: 20px;\n  text-align: center;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  overflow: hidden;\n}\n\n.form div {\n  margin: 10px 0;\n}\n\n.form label {\n  display: inline-block;\n  width: 80px;\n  text-align: right;\n  padding-right: 10px;\n}\n\n.form button {\n  width: 80px;\n}\n\n.form textarea {\n  margin: 0 0 10px 0;\n  width: 100%;\n  height: 90px;\n  border: 1px solid #ccc;\n  outline: none;\n  resize: none;\n}\n\n/* FOOTER\n   ----------------------------------------------------*/\n\n#footer {\n  clear: both;\n  position: relative;\n  width: 857px;\n  height: 89px;\n  margin: 0 auto;\n  padding: 30px 50px 0;\n  font-size: 75%;\n  color: #fff;\n  background: url(http://7xu36i.com1.z0.glb.clouddn.com/footer.png) 0 0 no-repeat;\n}\n\n#footer p {\n  margin: 0;\n}\n\n#footer a {\n  color: #fff;\n}\n\n#footer .tel,\n#footer .fax,\n#footer .email {\n  margin: 0 0 0 10px;\n}\n\n#footer #mark {\n  display: block;\n  position: absolute;\n  top: 15px;\n  right: 70px;\n  width: 139px;\n  height: 93px;\n  border: none;\n  background: url(http://7xu36i.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg) 0 0 no-repeat;\n}\n\n#footer #mark img {\n  display: none;\n}\n\n#contact-info {\n  display: none;\n}\n\n#addthis:hover {\n  background-position: 0 -30px;\n}\n\nul {\n  margin: 0;\n  padding: 0;\n}\n\nli {\n  list-style-type: none;\n}\n\n.mainpage {\n  overflow: hidden;\n  margin-bottom: 20px;\n}\n\n.mainpage .mainleft {\n  float: left;\n  width: 75%;\n  padding: 40px 20px 20px 100px;\n  box-sizing: border-box;\n}\n\n.mainpage .mainright {\n  float: left;\n  width: 25%;\n  border-left: 1px solid #cca955;\n  padding: 40px 0 20px 20px;\n  box-sizing: border-box;\n}\n\n.page-side .side-list li {\n  margin-bottom: 20px;\n}\n\n.page-side .side-list li img {\n  display: block;\n  width: 100%;\n}\n\n.page-side .side-list li p {\n  font-size: 13px;\n  line-height: 20px;\n}\n\n.search-area {\n  float: right;\n  overflow: hidden;\n  width: 195px;\n  margin: 0 0 4px;\n  padding: 1px;\n  border-radius: 5px;\n  background-color: #fff;\n  border: 1px solid #dadada;\n}\n\n.search-area .search-q {\n  float: left;\n  width: 165px;\n  height: 22px;\n  margin: 0;\n  padding: 0 3px;\n  border: none;\n  font-size: 90%;\n  color: #444;\n  -webkit-appearance: textfield;\n  background: transparent;\n}\n\n.search-area .search-button {\n  float: right;\n  text-indent: -9999px;\n  overflow: hidden;\n  width: 22px;\n  height: 22px;\n  margin: 0;\n  border: 1px solid #adadad;\n  cursor: pointer;\n  border-radius: 5px;\n  background: #d3d3d3 url(" + __webpack_require__(88) + ") center center no-repeat;\n  background: url(" + __webpack_require__(88) + ") center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0))), #a6a6a6;\n  background: url(" + __webpack_require__(88) + ") center center no-repeat, -moz-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), #a6a6a6;\n  -webkit-transition: all .15s ease-in-out;\n  transition: all .15s ease-in-out;\n}\n\n.search-key {\n  clear: both;\n  float: right;\n  padding: 0.1em;\n  margin-bottom: 20px;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin: 1.8em 0 8px;\n  color: #1c3042;\n  line-height: 1.1em;\n  font-weight: bold;\n  text-rendering: optimizeLegibility;\n  /* font-family: Georgia, Times, \"Times New Roman\", serif; */\n}\n\n.most-recent {\n  margin: 35px 0 30px;\n  font-size: 124%;\n  text-transform: uppercase;\n  color: #1c3042;\n  line-height: 1.1em;\n  font-weight: bold;\n  text-rendering: optimizeLegibility;\n}\n\n.summary {\n  margin: 0 0 30px;\n}\n\n.summary .author {\n  margin: 0 0 6px;\n  text-transform: uppercase;\n  font-weight: bold;\n  font-size: 100%;\n  color: #000;\n}\n\n.summary .entry-title,\n.summary .entry-title a {\n  font-size: 13px;\n  font-weight: normal !important;\n  text-decoration: underline;\n  margin: 0 0 7px !important;\n  padding: 0 !important;\n  border: none;\n  background: none !important;\n  font-weight: bold !important;\n  text-align: left;\n  color: #1768cc !important;\n}\n\n.summary .publisher,\n.summary .reviewers {\n  margin: 0;\n  line-height: 1em;\n  font-size: 100%;\n  font-weight: normal;\n  line-height: 1.6em;\n  color: black;\n}\n\n.summary .publisher .reviewed-by,\n.summary .reviewers .reviewed-by {\n  float: left;\n  margin-right: 5px;\n}\n\n.summary .edition {\n  width: 510px;\n  padding: 0 60px 0 0;\n  font-size: 15px;\n  line-height: 1.5em;\n}\n\nbody {\n  width: 100%;\n  width: 100%;\n  color: #000;\n  line-height: 1.6em;\n  -webkit-font-smoothing: antialiased;\n  font-family: 微软雅黑;\n  background: 0 0 repeat-x;\n}\n\n.hide {\n  display: none !important;\n}\n\n.contri {\n  padding: 10px 40px;\n}\n\n.contri li {\n  margin: 20px 0;\n}\n\n.contri li h2 {\n  font-size: 13px;\n  font-weight: bold;\n  line-height: 28px;\n}\n\n.contri li input {\n  display: block;\n  width: 300px;\n  height: 24px;\n  font-size: 13px;\n}\n\n.contri li span {\n  font-size: 13px;\n  line-height: 20px;\n}\n\n.contri li textarea {\n  display: block;\n  width: 100%;\n  height: 60px;\n}\n\n.contri li select {\n  display: block;\n}\n\n.contri .entry-title {\n  margin: 0 0 7px !important;\n  padding: 0 !important;\n  text-transform: none;\n  text-decoration: none;\n  border: none;\n  background: none !important;\n  font-weight: bold !important;\n  font-size: 140%;\n  text-align: left;\n  color: #1768cc !important;\n  font-family: \"Lucida Sans\", \"Lucida Grande\", \"Lucida Sans Unicode\", \"Helvetica Neue\", Helvetica, Arial, Verdana, sans-serif;\n}\n\n.contri .bibliography {\n  font-size: 100%;\n  font-weight: normal;\n  line-height: 1.6em;\n  color: black;\n}\n\n.contri .bibliography p {\n  margin: 0;\n}\n\n.contri .reviewers {\n  margin-bottom: 20px;\n}\n\n.bshare-custom {\n  margin: 20px 0;\n}\n\n", "", {"version":3,"sources":["/./src/pages/index/index.scss"],"names":[],"mappings":"AAAA,iBAAA;;AAGA;EACI,iBAAA;CAAH;;AAED;EACI,iBAAA;EACA,iBAAA;EACA,aAAA;EACA,oBAAA;EACA,WAAA;EACA,yFAAA;CACH;;AACD;EACI,eAAA;EACA,mBAAA;EACA,8BAAA;EACA,YAAA;EACA,cAAA;EACA,8BAAA;EACA,6BAAA;CAEH;;AAAD;EACI,uBAAA;EACA,mBAAA;EACA,WAAA;CAGH;;AADG;EACA,UAAA;EACA,WAAA;EACA,iBAAA;CAIH;;AAFD;EACI,YAAA;EACA,gBAAA;CAKH;;AAHU;EACP,kBAAA;CAMH;;AAJD;EACI,eAAA;EACA,YAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,iBAAA;EACA,0BAAA;CAOH;;AALD;EACI,8BAAA;CAQH;;AAND;EACI,eAAA;EACA,uBAAA;EACA,YAAA;EACA,yBAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;CASH;;AAPD;EACI,eAAA;CAUH;;AARD;EACI,sBAAA;EACA,YAAA;EACA,kBAAA;EACA,oBAAA;CAWH;;AATD;EACI,YAAA;CAYH;;AAVD;EACI,mBAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;EACA,cAAA;EACA,aAAA;CAaH;;AAVD;yDAayD;;AAXzD;EAAS,YAAA;EAAa,mBAAA;EAAoB,aAAA;EAAc,aAAA;EAAc,eAAA;EAAgB,qBAAA;EAAsB,eAAA;EAAgB,YAAA;EAAa,gFAAA;CAuBxI;;AAtBD;EAAW,UAAA;CA0BV;;AAzBD;EAAW,YAAA;CA6BV;;AA5BD;;;EAEgB,mBAAA;CAgCf;;AA/BD;EAAe,eAAA;EAAgB,mBAAA;EAAoB,UAAA;EAAW,YAAA;EAAa,aAAA;EAAc,aAAA;EAAc,aAAA;EAAc,qGAAA;CA0CpH;;AAzCa;EAAK,cAAA;CA6ClB;;AA5CD;EAAe,cAAA;CAgDd;;AA9CD;EAAgB,6BAAA;CAkDf;;AAhDD;EACI,UAAA;EACA,WAAA;CAmDH;;AAjDD;EACI,sBAAA;CAoDH;;AAjDD;EACI,iBAAA;EACA,oBAAA;CAoDH;;AAnDG;EACI,YAAA;EACA,WAAA;EACA,8BAAA;EACA,uBAAA;CAsDP;;AA7DD;EAUQ,YAAA;EACA,WAAA;EACA,+BAAA;EACA,0BAAA;EACA,uBAAA;CAuDP;;AApDD;EAGY,oBAAA;CAqDX;;AApDW;EACI,eAAA;EACA,YAAA;CAuDf;;AArDW;EACI,gBAAA;EACA,kBAAA;CAwDf;;AAnDD;EACI,aAAA;EACA,iBAAA;EACA,aAAA;EACA,gBAAA;EACA,aAAA;EAEA,mBAAA;EACA,uBAAA;EACA,0BAAA;CAsDH;;AArDG;EACI,YAAA;EACA,aAAA;EACA,aAAA;EACA,UAAA;EACA,eAAA;EACA,aAAA;EACA,eAAA;EACA,YAAA;EACA,8BAAA;EACA,wBAAA;CAwDP;;AA5ED;EAuBQ,aAAA;EACA,qBAAA;EACA,iBAAA;EACA,YAAA;EACA,aAAA;EACA,UAAA;EACA,0BAAA;EACA,gBAAA;EAEA,mBAAA;EACA,0EAAA;EACA,wLAAA;EACA,wJAAA;EACA,yCAAA;EAGA,iCAAA;CAyDP;;AAtDD;EACI,YAAA;EACA,aAAA;EACA,eAAA;EACA,oBAAA;CAyDH;;AAtDD;;;;;;EACI,oBAAA;EACA,eAAA;EACA,mBAAA;EACA,kBAAA;EACA,mCAAA;EACA,4DAAA;CA8DH;;AA3DD;EACI,oBAAA;EACA,gBAAA;EACA,0BAAA;EACA,eAAA;EACA,mBAAA;EACA,kBAAA;EACA,mCAAA;CA8DH;;AA5DD;EACI,iBAAA;CA+DH;;AAhED;EAGQ,gBAAA;EACA,0BAAA;EACA,kBAAA;EACA,gBAAA;EACA,YAAA;CAiEP;;AAxED;;EAUQ,gBAAA;EACA,+BAAA;EACA,2BAAA;EACA,2BAAA;EACA,sBAAA;EACA,aAAA;EACA,4BAAA;EACA,6BAAA;EACA,iBAAA;EACA,0BAAA;CAmEP;;AAtFD;;EAsBQ,UAAA;EACA,iBAAA;EACA,gBAAA;EACA,oBAAA;EACA,mBAAA;EACA,aAAA;CAqEP;;AAhGD;;EA6BY,YAAA;EACA,kBAAA;CAwEX;;AAtGD;EAkCQ,aAAA;EACA,oBAAA;EACA,gBAAA;EACA,mBAAA;CAwEP;;AApED;EACI,YAAA;EACA,YAAA;EACA,YAAA;EACA,mBAAA;EACA,oCAAA;EACA,kBAAA;EACA,yBAAA;CAuEH;;AArED;EACI,yBAAA;CAwEH;;AAtED;EACI,mBAAA;CAyEH;;AA1ED;EAGQ,eAAA;CA2EP;;AA1EO;EACI,gBAAA;EACA,kBAAA;EACA,kBAAA;CA6EX;;AA3EO;EACI,eAAA;EACA,aAAA;EACA,aAAA;EACA,gBAAA;CA8EX;;AA3FD;EAgBY,gBAAA;EACA,kBAAA;CA+EX;;AA7EO;EACI,eAAA;EACA,YAAA;EACA,aAAA;CAgFX;;AA9EO;EACI,eAAA;CAiFX;;AA1GD;EA6BQ,2BAAA;EACA,sBAAA;EACA,qBAAA;EACA,sBAAA;EACA,aAAA;EACA,4BAAA;EACA,6BAAA;EACA,gBAAA;EACA,iBAAA;EACA,0BAAA;EACA,4HAAA;CAiFP;;AAxHD;EA0CQ,gBAAA;EACA,oBAAA;EACA,mBAAA;EACA,aAAA;CAkFP;;AAjFO;EACI,UAAA;CAoFX;;AAjFG;EACI,oBAAA;CAoFP;;AAjFD;EACI,eAAA;CAoFH","file":"index.scss","sourcesContent":["@import \"_var.scss\";\n@import \"../../common/_common.scss\";\n\nbody{\n    background: #fff;\n}\n#wrapper {\n    min-height: auto;\n    max-height: none;\n    width: 957px;\n    margin: 0 auto 20px;\n    padding: 0;\n    background: #fff url(http://7xu36i.com1.z0.glb.clouddn.com/new_header.png) 0 0 no-repeat;\n}\n#header {\n    display: block;\n    position: relative;\n    background-color: transparent;\n    width: 100%;\n    height: 310px;\n    background-position: 5px 40px;\n    background-repeat: no-repeat;\n}\n#content{\n    -webkit-box-flex: none;\n    -webkit-flex: none;\n    flex: none;\n}\nnav ul {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n}\n.sitenav li {\n    float: left;\n    display: inline;\n}\n.sitenav li.last{\n    margin-left: -2px;\n}\n.sitenav a {\n    display: block;\n    float: left;\n    width: 137px;\n    height: 89px;\n    text-indent: -9999px;\n    overflow: hidden;\n    background: 0 0 no-repeat;\n}\n.sitenav .nav-rec {\n    background-position: -160px 0;\n}\n.form{\n    display: block;\n    box-sizing:border-box;\n    width: 100%;\n    margin: 40px auto 0 auto;\n    padding: 20px;\n    text-align: center;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    overflow: hidden;\n}\n.form div{\n    margin: 10px 0;\n}\n.form label{\n    display: inline-block;\n    width: 80px;\n    text-align: right;\n    padding-right:10px;\n}\n.form button{\n    width: 80px;\n}\n.form textarea{\n    margin: 0 0 10px 0;\n    width: 100%;\n    height: 90px;\n    border: 1px solid #ccc;\n    outline: none;\n    resize: none;\n}\n\n/* FOOTER\n   ----------------------------------------------------*/\n#footer {clear:both; position:relative; width:857px; height:89px; margin:0 auto; padding:30px 50px 0; font-size:75%; color:#fff; background:url(http://7xu36i.com1.z0.glb.clouddn.com/footer.png) 0 0 no-repeat;}\n#footer p {margin:0;}\n#footer a {color:#fff;}\n#footer .tel,\n#footer .fax,\n#footer .email {margin:0 0 0 10px;}\n#footer #mark {display:block; position:absolute; top:15px; right:70px; width:139px; height:93px; border:none; background:url(http://7xu36i.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg) 0 0 no-repeat;}\n#footer #mark img {display:none;}\n#contact-info {display:none;}\n#footer #site-link {}\n#addthis:hover {background-position:0 -30px;}\n\nul{\n    margin: 0;\n    padding: 0;\n}\nli{\n    list-style-type: none;\n}\n\n.mainpage{\n    overflow:hidden;\n    margin-bottom: 20px;\n    .mainleft{\n        float: left;\n        width: 75%;\n        padding: 40px 20px 20px 100px;\n        box-sizing:border-box;\n    }\n    .mainright{\n        float: left;\n        width: 25%;\n        border-left: 1px solid #cca955;\n        padding:40px 0 20px 20px;\n        box-sizing:border-box;\n    }\n}\n.page-side{\n    .side-list{\n        li{\n            margin-bottom: 20px;\n            img{\n                display: block;\n                width: 100%;\n            }\n            p{\n                font-size: 13px;\n                line-height: 20px;\n            }\n        }\n    }\n}\n.search-area{\n    float: right;\n    overflow: hidden;\n    width: 195px;\n    margin: 0 0 4px;\n    padding: 1px;\n    -moz-border-radius: 5px;\n    border-radius: 5px;\n    background-color: #fff;\n    border: 1px solid #dadada;\n    .search-q{\n        float: left;\n        width: 165px;\n        height: 22px;\n        margin: 0;\n        padding: 0 3px;\n        border: none;\n        font-size: 90%;\n        color: #444;\n        -webkit-appearance: textfield;\n        background: transparent;\n    }\n    .search-button{\n        float: right;\n        text-indent: -9999px;\n        overflow: hidden;\n        width: 22px;\n        height: 22px;\n        margin: 0;\n        border: 1px solid #adadad;\n        cursor: pointer;\n        -moz-border-radius: 5px;\n        border-radius: 5px;\n        background: #d3d3d3 url(./searchmag.png) center center no-repeat;\n        background: url(./searchmag.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .9)), to(rgba(255, 255, 255, .0))), hsl(0, 0%, 65%);\n        background: url(./searchmag.png) center center no-repeat, -moz-linear-gradient(top, rgba(255, 255, 255, .9), rgba(255, 255, 255, .0)), hsl(0, 0%, 65%);\n        -webkit-transition: all .15s ease-in-out;\n        -moz-transition: all .15s ease-in-out;\n        -o-transition: all .15s ease-in-out;\n        transition: all .15s ease-in-out;\n    }\n}\n.search-key{\n    clear: both;\n    float: right;\n    padding: 0.1em;\n    margin-bottom: 20px;\n}\n\nh1, h2, h3, h4, h5, h6 {\n    margin: 1.8em 0 8px;\n    color: #1c3042;\n    line-height: 1.1em;\n    font-weight: bold;\n    text-rendering: optimizeLegibility;\n    /* font-family: Georgia, Times, \"Times New Roman\", serif; */\n}\n\n.most-recent{\n    margin: 35px 0 30px;\n    font-size: 124%;\n    text-transform: uppercase;\n    color: #1c3042;\n    line-height: 1.1em;\n    font-weight: bold;\n    text-rendering: optimizeLegibility;\n}\n.summary{\n    margin: 0 0 30px;\n    .author{\n        margin: 0 0 6px;\n        text-transform: uppercase;\n        font-weight: bold;\n        font-size: 100%;\n        color: #000;\n    }\n    .entry-title,.entry-title a{\n        font-size: 13px;\n        font-weight: normal !important;\n        text-decoration: underline;\n        margin: 0 0 7px !important;\n        padding: 0 !important;\n        border: none;\n        background: none !important;\n        font-weight: bold !important;\n        text-align: left;\n        color: #1768cc !important;\n    }\n    .publisher,.reviewers{\n        margin: 0;\n        line-height: 1em;\n        font-size: 100%;\n        font-weight: normal;\n        line-height: 1.6em;\n        color: black;\n        .reviewed-by {\n            float: left;\n            margin-right: 5px;\n        }\n    }\n    .edition{\n        width: 510px;\n        padding: 0 60px 0 0;\n        font-size: 15px;\n        line-height: 1.5em;\n    }\n}\n\nbody{\n    width: 100%;\n    width: 100%;\n    color: #000;\n    line-height: 1.6em;\n    -webkit-font-smoothing: antialiased;\n    font-family: å¾®è½¯éé»;\n    background: 0 0 repeat-x;\n}\n.hide{\n    display: none !important;\n}\n.contri{\n    padding: 10px 40px;\n    li{\n        margin: 20px 0;\n        h2{\n            font-size: 13px;\n            font-weight: bold;\n            line-height: 28px;\n        }\n        input{\n            display:block;\n            width: 300px;\n            height:24px;\n            font-size:13px;\n        }\n        span{\n            font-size:13px;\n            line-height:20px;\n        }\n        textarea{\n            display:block;\n            width: 100%;\n            height:60px;\n        }\n        select{\n            display:block;\n        }\n    }\n    .entry-title{\n        margin: 0 0 7px !important;\n        padding: 0 !important;\n        text-transform: none;\n        text-decoration: none;\n        border: none;\n        background: none !important;\n        font-weight: bold !important;\n        font-size: 140%;\n        text-align: left;\n        color: #1768cc !important;\n        font-family: \"Lucida Sans\", \"Lucida Grande\", \"Lucida Sans Unicode\", \"Helvetica Neue\", Helvetica, Arial, Verdana, sans-serif;\n    }\n    .bibliography{\n        font-size: 100%;\n        font-weight: normal;\n        line-height: 1.6em;\n        color: black;\n        p{\n            margin: 0;\n        }\n    }\n    .reviewers{\n        margin-bottom: 20px;\n    }\n}\n.bshare-custom{\n    margin: 20px 0;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 85 */
+/* 88 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAMAAADjcdz2AAAAA3NCSVQICAjb4U/gAAAAn1BMVEX///////8zMzP///+ioqJ8fHxBQUEzMzP///8zMzP////MzMwzMzP29vb///9BQUE6OjozMzP////29vY6OjozMzP////w8PDMzMwzMzP////w8PA6OjozMzOrq6ufn5/n5+fU1NQzMzPMzMyrq6tBQUE6OjozMzN8fHxycnJubm5mZmZXV1dTU1NBQUE6OjozMzNNTU1BQUE6OjozMzPhjpV7AAAANXRSTlMAEREiIiIiIjMzREREZnd3d3eIiIiImZmZmaqqqqq7u8zMzN3d3d3d7u7u7u7u7u7u/////85U1sgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzOY1kYDAAAAoElEQVQYlVWQ2RaCMAxEU1BrEXFBUXFfULQoCPP/32YXRJyX6dzm5CQh0uKCWnJWBVBs+TfzG/B+KuTX/1fIYxwf7ihszRgydInY9IGNAQl2tnSJ3HiFgQVuiZ72Et26e4WONomRzT5Kpn2P3HR3Erwc/fAkMBdioobDyZBFikaGsOCcZll6yRpC/SCKAm9tyOy3I9NEDumPyLB9BkVU/gC3mhNgIwCrgAAAAABJRU5ErkJggg=="
+
+/***/ },
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!
@@ -2928,7 +2937,7 @@ webpackJsonp([1],[
 	}));
 
 /***/ },
-/* 86 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -2938,12 +2947,12 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
-	var PageHead = __webpack_require__(93);
-	var PageFoot = __webpack_require__(95);
+	var Toast = __webpack_require__(91);
+	var PageHead = __webpack_require__(94);
+	var PageFoot = __webpack_require__(96);
 	
 	var Layout = Vue.extend({
-	  template: __webpack_require__(97),
+	  template: __webpack_require__(98),
 	
 	  data: function data() {
 	    return {};
@@ -2963,7 +2972,7 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 87 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -2972,13 +2981,13 @@ webpackJsonp([1],[
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(88);
+	var _createClass2 = __webpack_require__(82);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	__webpack_require__(91);
+	__webpack_require__(92);
 	
 	var ToastComp = {
 	  data: function data() {
@@ -3013,60 +3022,13 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 88 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	exports.__esModule = true;
-	
-	var _defineProperty = __webpack_require__(89);
-	
-	var _defineProperty2 = _interopRequireDefault(_defineProperty);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function () {
-	  function defineProperties(target, props) {
-	    for (var i = 0; i < props.length; i++) {
-	      var descriptor = props[i];
-	      descriptor.enumerable = descriptor.enumerable || false;
-	      descriptor.configurable = true;
-	      if ("value" in descriptor) descriptor.writable = true;
-	      (0, _defineProperty2.default)(target, descriptor.key, descriptor);
-	    }
-	  }
-	
-	  return function (Constructor, protoProps, staticProps) {
-	    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-	    if (staticProps) defineProperties(Constructor, staticProps);
-	    return Constructor;
-	  };
-	}();
-
-/***/ },
-/* 89 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(90), __esModule: true };
-
-/***/ },
-/* 90 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(30);
-	module.exports = function defineProperty(it, key, desc){
-	  return $.setDesc(it, key, desc);
-	};
-
-/***/ },
-/* 91 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(92);
+	var content = __webpack_require__(93);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(12)(content, {});
@@ -3086,7 +3048,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 92 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(11)();
@@ -3100,7 +3062,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 93 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3110,12 +3072,35 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
 	
 	var PageHead = Vue.component('page-head', {
-	  template: __webpack_require__(94),
+	  template: __webpack_require__(95),
 	  data: function data() {
-	    return {};
+	    return {
+	      navs: [{
+	        name: "最新文章",
+	        link: "/index/news"
+	      }, {
+	        name: "哲学书平",
+	        link: "/index/book"
+	      }, {
+	        name: "名家访谈",
+	        link: "/index/expert"
+	      }, {
+	        name: "学子问答",
+	        link: "/index/qa"
+	      }, {
+	        name: "在线投稿",
+	        link: "/index/contribute"
+	      }, {
+	        name: "关于我们",
+	        link: "/index/about"
+	      }, {
+	        name: "捐赠",
+	        link: "/index/donate"
+	      }]
+	    };
 	  },
 	
 	  methods: {},
@@ -3127,13 +3112,13 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 94 */
+/* 95 */
 /***/ function(module, exports) {
 
-	module.exports = "<header id=\"header\" role=\"banner\">\n  <nav id=\"nav\" role=\"navigation\" style=\"\n    padding: 200px 0 0 0;\">\n    <ul class=\"sitenav depth_1\">\n      <li class=\"first\">\n        <a class=\"nav-rec\" href=\"http://www.zhexueshuping.com/\">Recent</a>\n      </li>\n      <li>\n        <a class=\"nav-arc\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%93%B2%E5%AD%A6%E4%B9%A6%E8%AF%84\">Articles</a>\n      </li><li>\n        <a class=\"nav-edi\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%90%8D%E5%AE%B6%E8%AE%BF%E8%B0%88\">Reviews</a>\n      </li>\n      <li>\n        <a class=\"nav-qanda\" href=\"http://www.zhexueshuping.com/articles?channel=%E5%AD%A6%E5%AD%90%E9%97%AE%E7%AD%94\">Q&amp;A</a>\n      </li>\n      <li>\n        <a class=\"nav-rev\" href=\"http://www.zhexueshuping.com/articles/new\">Submission</a>\n      </li>\n      <li>\n        <a class=\"nav-abo\" href=\"http://www.zhexueshuping.com/about\">About</a>\n      </li>\n      <li class=\"last\">\n        <a class=\"nav-fre\" href=\"http://www.zhexueshuping.com/donation\">Donation</a>\n      </li>\n    </ul>\n  </nav>\n</header>";
+	module.exports = "<header id=\"header\" role=\"banner\">\n  <nav id=\"nav\" role=\"navigation\" style=\"\n    padding: 200px 0 0 0;\">\n    <ul class=\"sitenav depth_1\">\n      <li v-for=\"(index,nav) in navs\" :class=\"{last:index==navs.length-1,first:index==0}\" >\n        <a v-link=\"nav.link\" >{{nav.name}}</a>\n      </li>\n    </ul>\n  </nav>\n</header>";
 
 /***/ },
-/* 95 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3143,10 +3128,10 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
 	
 	var PageFoot = Vue.component('page-foot', {
-	  template: __webpack_require__(96),
+	  template: __webpack_require__(97),
 	  data: function data() {
 	    return {};
 	  },
@@ -3160,19 +3145,19 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 96 */
+/* 97 */
 /***/ function(module, exports) {
 
 	module.exports = "<footer id=\"footer\" class=\"vcard\" role=\"contentinfo\">\n  <p id=\"copyright\" class=\"url fn org\">\n  <a href=\"http://www.zhexueshuping.com/\">Copyright</a> © 2016 <a href=\"/\" id=\"site-link\" class=\"url fn prg\">哲学书评</a> <br>\n  <a href=\"http://www.miitbeian.gov.cn\">苏ICP备16021344号</a>\n  </p>\n  <a href=\"https://site.douban.com/274863/widget/notes/191688682/note/558693421/\" id=\"mark\"><img src=\"http://7xu36i.com1.z0.glb.clouddn.com/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg\" class=\"ndmark\" alt=\"二维码\"></a>\n</footer>";
 
 /***/ },
-/* 97 */
+/* 98 */
 /***/ function(module, exports) {
 
-	module.exports = "<div id=\"wrapper\">\n  <page-head />\n  <router-view></router-view>\n  <page-foot />\n</div>";
+	module.exports = "<div id=\"wrapper\">\n  <page-head></page-head>\n  <div id=\"content\" role=\"main\">\n    <router-view></router-view>\n  </div>\n  <page-foot></page-foot>\n</div>";
 
 /***/ },
-/* 98 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3182,10 +3167,10 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
 	
 	var Sign = Vue.extend({
-	  template: __webpack_require__(99),
+	  template: __webpack_require__(100),
 	
 	  data: function data() {
 	    return {
@@ -3198,12 +3183,13 @@ webpackJsonp([1],[
 	
 	  methods: {
 	    sign: function sign() {
+	      var _this = this;
 	      if (!this.validate()) {
 	        return;
 	      }
 	      var name = this.name;
 	      reqwest({
-	        url: 'http://www.zhexueshuping.com/api/signup',
+	        url: utils.APIPrefix() + 'vvsignup',
 	        method: 'POST',
 	        data: {
 	          user: this.user
@@ -3213,7 +3199,7 @@ webpackJsonp([1],[
 	        localStorage.setItem('TOKEN', resp.token);
 	        localStorage.setItem('NAME', name);
 	        setTimeout(function () {
-	          location.hash = "#!/index/login";
+	          _this.$router.go('/index/login');
 	        }, 2000);
 	      }).catch(function (e) {
 	        console.error(e);
@@ -3251,13 +3237,13 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 99 */
+/* 100 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n  <form  class=\"form\">\n    <div><label>姓名</label><input v-model=\"name\" type=\"text\" /></div>\n    <div><label>密码</label><input v-model=\"password\" type=\"password\" /></div>\n    <div><label>确认密码</label><input v-model=\"check\" type=\"password\" /></div>\n    <button @click=\"sign()\">注册</button>\n  </form>\n</div>";
 
 /***/ },
-/* 100 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3267,10 +3253,10 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
 	
 	var Login = Vue.extend({
-	  template: __webpack_require__(101),
+	  template: __webpack_require__(102),
 	
 	  data: function data() {
 	    return {
@@ -3281,18 +3267,19 @@ webpackJsonp([1],[
 	
 	  methods: {
 	    login: function login() {
+	      var _this = this;
 	      if (!this.validate()) {
 	        return;
 	      }
 	      reqwest({
-	        url: 'http://www.zhexueshuping.com/api/login?name=' + this.name + "&password=" + this.password,
+	        url: utils.APIPrefix() + 'login?name=' + this.name + "&password=" + this.password,
 	        method: 'POST'
 	      }).then(function (resp) {
 	        Toast.show('登陆成功');
 	        localStorage.setItem('TOKEN', resp.token);
 	        localStorage.setItem('NAME', resp.name);
 	        setTimeout(function () {
-	          location.href = "http://www.zhexueshuping.com";
+	          _this.$router.go('/index/news');
 	        }, 2000);
 	      }).catch(function (e) {
 	        console.error(e);
@@ -3318,13 +3305,13 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 101 */
+/* 102 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n  <form class=\"form\">\n    <div><label>姓名</label><input v-model=\"name\" type=\"text\" /></div>\n    <div><label>密码</label><input v-model=\"password\" type=\"password\" /></div>\n    <button @click=\"login()\">登陆</button>\n  </form>\n</div>";
 
 /***/ },
-/* 102 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3334,25 +3321,58 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
+	var PageSide = __webpack_require__(104);
+	var Abstract = __webpack_require__(108);
+	var Share = __webpack_require__(110);
 	
 	var News = Vue.extend({
-	  template: __webpack_require__(103),
+	  template: __webpack_require__(112),
 	
-	  data: function data() {},
+	  data: function data() {
+	    return {
+	      articles: [],
+	      sideList: [{
+	        "name": "[古希腊]柏拉图和亚里士多德",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E6%9F%8F%E6%8B%89%E5%9B%BE%E4%B8%8E%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7.jpg"
+	      }, {
+	        "name": "[法]笛卡尔，1596年 - 1650年",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E7%AC%9B%E5%8D%A1%E5%B0%94.png"
+	      }, {
+	        "name": "[德]康德，1724年 - 1804年",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E5%BA%B7%E5%BE%B7.jpg"
+	      }, {
+	        "name": "[德]黑格尔，1770年 - 1831年",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E9%BB%91%E6%A0%BC%E5%B0%94.jpg"
+	      }],
+	      count: 0
+	    };
+	  },
 	
 	  methods: {},
-	  ready: function ready() {}
+	  ready: function ready() {
+	    var _this = this;
+	    reqwest({
+	      url: utils.APIPrefix() + 'articles/last_ten',
+	      method: 'GET'
+	    }).then(function (resp) {
+	      _this.articles = resp.articles;
+	    }).catch(function (e) {
+	      console.error(e);
+	      Toast.show("获取页面信息失败，请刷新！");
+	    });
+	    setTimeout(function () {}, 2000);
+	  },
+	
+	  components: {
+	    PageSide: PageSide,
+	    Abstract: Abstract,
+	    Share: Share
+	  }
 	});
 	
 	module.exports = News;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
-
-/***/ },
-/* 103 */
-/***/ function(module, exports) {
-
-	module.exports = "";
 
 /***/ },
 /* 104 */
@@ -3365,28 +3385,35 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
 	
-	var Book = Vue.extend({
-	  template: __webpack_require__(105),
+	var SearchArea = __webpack_require__(105);
 	
-	  data: function data() {},
+	var PageSide = Vue.component('page-side', {
+	  template: __webpack_require__(107),
+	  props: {
+	    list: {
+	      default: []
+	    }
+	  },
+	  data: function data() {
+	    return {};
+	  },
 	
 	  methods: {},
-	  ready: function ready() {}
+	  computed: {},
+	  ready: function ready() {},
+	
+	  components: {
+	    SearchArea: SearchArea
+	  }
 	});
 	
-	module.exports = Book;
+	module.exports = PageSide;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
 /* 105 */
-/***/ function(module, exports) {
-
-	module.exports = "";
-
-/***/ },
-/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3396,25 +3423,54 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
 	
-	var Expert = Vue.extend({
-	  template: __webpack_require__(107),
+	var SearchArea = Vue.component('search-area', {
+	  template: __webpack_require__(106),
+	  props: {
+	    action: {
+	      default: ''
+	    }
+	  },
+	  data: function data() {
+	    return {
+	      types: [{
+	        "name": "作者",
+	        "value": "search_authors"
+	      }, {
+	        "name": "书名",
+	        "value": "search_title"
+	      }],
+	      search: {
+	        type: "search_authors",
+	        key: ''
+	      }
+	    };
+	  },
 	
-	  data: function data() {},
-	
-	  methods: {},
+	  methods: {
+	    submit: function submit() {
+	      return;
+	    }
+	  },
+	  computed: {},
 	  ready: function ready() {}
 	});
 	
-	module.exports = Expert;
+	module.exports = SearchArea;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 106 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>\n  <div class=\"search-area\">\n    <input type=\"search\" class=\"search-q\" placeholder=\"搜索\" v-model=\"search.key\" />\n    <button class=\"search-button\" @click=\"submit\">搜索</button>\n  </div>\n  <select class=\"search-key\" v-model=\"search.type\">\n    <option v-for=\"type in types\" :value=\"type.value\">{{type.name}}</option>\n  </select>\n</div>";
 
 /***/ },
 /* 107 */
 /***/ function(module, exports) {
 
-	module.exports = "";
+	module.exports = "<div class=\"page-side\">\n  <search-area></search-area>\n  <ul class=\"side-list\">\n    <li v-for=\"item in list\">\n      <img :src=\"item.img\" />\n      <p>{{item.name}}</p>\n    </li>\n  </ul>\n</div>";
 
 /***/ },
 /* 108 */
@@ -3427,25 +3483,31 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
 	
-	var Qa = Vue.extend({
+	var Abstract = Vue.extend({
 	  template: __webpack_require__(109),
-	
-	  data: function data() {},
+	  props: {
+	    article: {
+	      default: {}
+	    }
+	  },
+	  data: function data() {
+	    return {};
+	  },
 	
 	  methods: {},
 	  ready: function ready() {}
 	});
 	
-	module.exports = Qa;
+	module.exports = Abstract;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
 /* 109 */
 /***/ function(module, exports) {
 
-	module.exports = "";
+	module.exports = "<article class=\"hentry summary\">\n  <header>\n    <hgroup>\n      <h2 class=\"author\">{{article.author}}</h2>\n      <h1 class=\"entry-title\"><a v-link=\"{path:'/index/article/'+article.id}\">{{article.title}}</a></h1>\n      <h3 class=\"publisher\">{{article.sub_title}}</h3>\n      <h4 class=\"reviewers\"><span class=\"reviewed-by\"></span>{{article.reviewer}}</h4>\n    </hgroup>\n  </header>\n  <div class=\"edition\">{{article.published_at}}</div>\n</article>";
 
 /***/ },
 /* 110 */
@@ -3458,14 +3520,323 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
 	
-	var Contribute = Vue.extend({
+	var Share = Vue.component('share', {
 	  template: __webpack_require__(111),
-	
-	  data: function data() {},
+	  props: {
+	    title: {
+	      default: "哲学书评"
+	    },
+	    desc: {
+	      default: "哲学书评主要关注对汉语哲学界出版的新书、重要文章的评论，以及对学术名家的访谈。欢迎关注我们并向我们投稿！"
+	    }
+	  },
+	  data: function data() {
+	    return {};
+	  },
 	
 	  methods: {},
+	  computed: {},
+	  ready: function ready() {
+	    var _this = this;
+	    var interval = setInterval(function () {
+	      if (window.bShare) {
+	        window.bShare.addEntry({
+	          title: _this.title,
+	          url: location.href,
+	          summary: _this.desc
+	        });
+	        window.bShare.init();
+	        clearInterval(interval);
+	      }
+	    }, 200);
+	  }
+	});
+	
+	module.exports = Share;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 111 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>\n  <div class=\"bshare-custom\"><a title=\"分享到QQ空间\" class=\"bshare-qzone\"></a><a title=\"分享到新浪微博\" class=\"bshare-sinaminiblog\"></a><a title=\"分享到人人网\" class=\"bshare-renren\"></a><a title=\"分享到腾讯微博\" class=\"bshare-qqmb\"></a><a title=\"分享到网易微博\" class=\"bshare-neteasemb\"></a><a title=\"更多平台\" class=\"bshare-more bshare-more-icon more-style-addthis\"></a><span class=\"BSHARE_COUNT bshare-share-count\">0</span></div><script type=\"text/javascript\" charset=\"utf-8\" src=\"http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh\"></script><script type=\"text/javascript\" charset=\"utf-8\" src=\"http://static.bshare.cn/b/bshareC0.js\"></script>\n  <script type=\"text/javascript\" charset=\"utf-8\">\n    bShare.init();\n  </script>\n</div>";
+
+/***/ },
+/* 112 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"mainpage\">\n  <div class=\"mainleft\">\n    <h2 class=\"most-recent\">最新文章</h2>\n    <abstract v-for=\"article in articles\" :article=\"article\"></abstract>\n    <share></share>\n  </div>\n  <div class=\"mainright\">\n    <page-side :list=\"sideList\"></page-side>\n  </div>\n</div>";
+
+/***/ },
+/* 113 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(91);
+	var PageSide = __webpack_require__(104);
+	var Abstract = __webpack_require__(108);
+	var Share = __webpack_require__(110);
+	
+	var Book = Vue.extend({
+	  template: __webpack_require__(114),
+	
+	  data: function data() {
+	    return {
+	      articles: [],
+	      sideList: [{
+	        "name": "[德]尼采，1844年－1900年",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E5%B0%BC%E9%87%87.jpg"
+	      }, {
+	        "name": "[美]杜威，1859年－1952年",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E6%9D%9C%E5%A8%81.jpg"
+	      }, {
+	        "name": "[美]罗蒂，1931年－2007年",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E7%BD%97%E8%92%82.jpg"
+	      }, {
+	        "name": "[美]布兰顿，1950年－",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E5%B8%83%E5%85%B0%E9%A1%BF.jpg"
+	      }],
+	      count: 0
+	    };
+	  },
+	
+	  methods: {},
+	  ready: function ready() {
+	    var _this = this;
+	    reqwest({
+	      url: utils.APIPrefix() + 'articles?channel=哲学书评&page=1&per_page=10',
+	      method: 'GET'
+	    }).then(function (resp) {
+	      _this.articles = resp.articles;
+	    }).catch(function (e) {
+	      console.error(e);
+	      Toast.show("获取页面信息失败，请刷新！");
+	    });
+	  },
+	
+	  components: {
+	    PageSide: PageSide,
+	    Abstract: Abstract,
+	    Share: Share
+	  }
+	});
+	
+	module.exports = Book;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 114 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"mainpage\">\n  <div class=\"mainleft\">\n    <h2 class=\"most-recent\">哲学书评</h2>\n    <abstract v-for=\"article in articles\" :article=\"article\"></abstract>\n    <share></share>\n  </div>\n  <div class=\"mainright\">\n    <page-side :list=\"sideList\"></page-side>\n  </div>\n</div>";
+
+/***/ },
+/* 115 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(91);
+	var PageSide = __webpack_require__(104);
+	var Abstract = __webpack_require__(108);
+	var Share = __webpack_require__(110);
+	
+	var Expert = Vue.extend({
+	  template: __webpack_require__(116),
+	
+	  data: function data() {
+	    return {
+	      articles: [],
+	      sideList: [{
+	        "name": "[美籍华裔]成中英，夏威夷大学教授",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E6%88%90%E4%B8%AD%E8%8B%B1.jpg"
+	      }, {
+	        "name": "杜维明，哈佛大学教授",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E6%9D%9C%E7%BB%B4%E6%98%8E.jpg"
+	      }, {
+	        "name": "刘放桐，复旦大学教授",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E5%88%98%E6%94%BE%E6%A1%90.jpg"
+	      }, {
+	        "name": "叶秀山，中国社会科学院教授",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E5%8F%B6%E7%A7%80%E5%B1%B1.jpg"
+	      }],
+	      count: 0
+	    };
+	  },
+	
+	  methods: {},
+	  ready: function ready() {
+	    var _this = this;
+	    reqwest({
+	      url: utils.APIPrefix() + 'articles?channel=名家访谈&page=1&per_page=10',
+	      method: 'GET'
+	    }).then(function (resp) {
+	      _this.articles = resp.articles;
+	    }).catch(function (e) {
+	      console.error(e);
+	      Toast.show("获取页面信息失败，请刷新！");
+	    });
+	  },
+	
+	  components: {
+	    PageSide: PageSide,
+	    Abstract: Abstract,
+	    Share: Share
+	  }
+	});
+	
+	module.exports = Expert;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 116 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"mainpage\">\n  <div class=\"mainleft\">\n    <h2 class=\"most-recent\">名家访谈</h2>\n    <abstract v-for=\"article in articles\" :article=\"article\"></abstract>\n    <share></share>\n  </div>\n  <div class=\"mainright\">\n    <page-side :list=\"sideList\"></page-side>\n  </div>\n</div>";
+
+/***/ },
+/* 117 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(91);
+	var PageSide = __webpack_require__(104);
+	var Abstract = __webpack_require__(108);
+	var Share = __webpack_require__(110);
+	
+	var Qa = Vue.extend({
+	  template: __webpack_require__(118),
+	
+	  data: function data() {
+	    return {
+	      articles: [],
+	      sideList: [{
+	        "name": "[德]尼采，1844年－1900年",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E5%B0%BC%E9%87%87.jpg"
+	      }, {
+	        "name": "[美]杜威，1859年－1952年",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E6%9D%9C%E5%A8%81.jpg"
+	      }, {
+	        "name": "[美]罗蒂，1931年－2007年",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E7%BD%97%E8%92%82.jpg"
+	      }, {
+	        "name": "[美]布兰顿，1950年－",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E5%B8%83%E5%85%B0%E9%A1%BF.jpg"
+	      }],
+	      count: 0
+	    };
+	  },
+	
+	  methods: {},
+	  ready: function ready() {
+	    var _this = this;
+	    reqwest({
+	      url: utils.APIPrefix() + 'articles?channel=学子问答&page=1&per_page=10',
+	      method: 'GET'
+	    }).then(function (resp) {
+	      _this.articles = resp.articles;
+	    }).catch(function (e) {
+	      console.error(e);
+	      Toast.show("获取页面信息失败，请刷新！");
+	    });
+	  },
+	
+	  components: {
+	    PageSide: PageSide,
+	    Abstract: Abstract,
+	    Share: Share
+	  }
+	});
+	
+	module.exports = Qa;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 118 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"mainpage\">\n  <div class=\"mainleft\">\n    <h2 class=\"most-recent\">学子问答</h2>\n    <abstract v-for=\"article in articles\" :article=\"article\"></abstract>\n    <share></share>\n  </div>\n  <div class=\"mainright\">\n    <page-side :list=\"sideList\"></page-side>\n  </div>\n</div>";
+
+/***/ },
+/* 119 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
+	
+	var _require = __webpack_require__(13);
+	
+	var reqwest = _require.reqwest;
+	var utils = _require.utils;
+	
+	var Toast = __webpack_require__(91);
+	
+	var Contribute = Vue.extend({
+	  template: __webpack_require__(120),
+	
+	  data: function data() {
+	    return {
+	      name: localStorage.getItem('NAME'),
+	      token: localStorage.getItem('TOKEN'),
+	      article: {
+	        author: "",
+	        title: "",
+	        sub_title: "",
+	        reviewer: "",
+	        category: "英美哲学",
+	        content: "",
+	        contact: "",
+	        remark: ""
+	      }
+	    };
+	  },
+	
+	  methods: {
+	    submit: function submit() {
+	      var _this = this;
+	      if (!this.name || !this.token) {
+	        Toast.show('请先登录');
+	        setTimeout(function () {
+	          _this.$router.go('/index/login');
+	        }, 2000);
+	        return;
+	      }
+	      _this.content = window.CKEDITOR.instances.TextArea1.getData();
+	      reqwest({
+	        url: utils.APIPrefix() + 'articles',
+	        method: 'POST',
+	        data: {
+	          article: this.article
+	        },
+	        headers: {
+	          'Authorization': 'Token token=' + this.token + ',name=' + this.name
+	        }
+	      }).then(function (resp) {
+	        Toast.show("投稿成功！");
+	      }).catch(function (e) {
+	        console.error(e);
+	        Toast.show("投稿失败，请重试！");
+	      });
+	    }
+	  },
 	  ready: function ready() {}
 	});
 	
@@ -3473,13 +3844,13 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 111 */
+/* 120 */
 /***/ function(module, exports) {
 
-	module.exports = "";
+	module.exports = "<form class=\"contri\">\n  <ul>\n    <li>\n      <h2>原书作者</h2>\n      <input type=\"text\" v-model='article.author' />\n      <span>书评请填所评著作作者姓名，访谈请填“单位、被访谈人姓名与职称”，示例：“XX大学哲学系王小明教授专访”，学子问答请填写学子姓名</span>\n    </li>\n    <li>\n      <h2>标题</h2>\n      <input type=\"text\" v-model='article.title' />\n      <span>书评为所评著作名称，示例：《超越经验主义与理性主义》，包含书名号；访谈为访谈主题；学子问答为问答中标志性的一句话或座右铭</span>\n    </li>\n    <li>\n      <h2>书籍基本参数</h2>\n      <textarea v-model='article.sub_title' >\n      </textarea>\n      <span>书评请填写所评书籍详细参数，示例：陈亚军：《超越经验主义与理性主义》，南京：江苏人民出版社，2014年12月，279页，39元(平装)；访谈请填写被访谈人简介，包括出生日期，研究方向等基本情况；学子问答请填写学子简介</span>\n    </li>\n    <li>\n      <h2>书评撰稿人</h2>\n      <input type=\"text\" v-model='article.reviewer' />\n      <span>书评请填写“书评人 | 撰稿人姓名，工作单位与职称”，例如“书评人 | 小明，南京大学哲学系博士候选人”，访谈请填写“访谈人 | 撰稿人姓名，工作单位与职称”；学子问答请填写“访谈人 | 撰稿人姓名，工作单位与职称”</span>\n    </li>\n    <li>\n      <h2>投稿方向</h2>\n      <select v-model='article.category'>\n        <option value=\"英美哲学\">英美哲学</option>\n        <option value=\"欧陆哲学\">欧陆哲学</option>\n        <option value=\"中世纪古希腊哲学\">中世纪古希腊哲学</option>\n        <option value=\"宗教哲学\">宗教哲学</option>\n        <option value=\"马克思主义哲学\">马克思主义哲学</option>\n        <option value=\"政治和社会哲学\">政治和社会哲学</option>\n        <option value=\"中国哲学\">中国哲学</option>\n        <option value=\"伦理学\">伦理学</option>\n        <option value=\"比较哲学\">比较哲学</option>\n        <option value=\"艺术哲学\">艺术哲学</option>\n        <option value=\"其他\">其他</option>\n        <option value=\"名家访谈\">名家访谈</option>\n        <option value=\"学子问答\">学子问答</option>\n      </select>\n      <span>\n        学术书评需紧扣所评书籍、条理清晰、论述严密、行文晓畅，3000字左右为宜，文章建议布局：书籍总评、每一章概述（或按主题概述，可对思路、观点以及创新之处做出总结和论述）以及书籍存在的问题或不足之处。请采用文中注，避免脚注，所有论述均在正文中完成。如有参考文献，请采用APA格式排版好放置在正文尾部。访谈请保证一定的学术性，并添加被访谈人与访谈人简介，在正文前部。如有特殊情况说明或背景交代，请放置在简介与正文之间。段前不缩进，段与段之间不空行。\n      </span>\n    </li>\n    <li>\n      <h2>正文</h2>\n      <textarea id=\"TextArea1\" cols=\"20\" rows=\"2\" class=\"ckeditor\"></textarea>\n    </li>\n    <li>\n      <h2>联系方式</h2>\n      <input type=\"text\" v-model='article.contact' />\n      <span>请留下邮箱、手机号等常用联系方式，以便取得联系</span>\n    </li>\n    <li>\n      <h2>备注</h2>\n      <textarea v-model='article.remark' >\n      </textarea>\n      <span>如有特殊情况，请说明；如无，则可不填</span>\n    </li>\n  </ul>\n  <button @click=\"submit\">确认投稿</button>\n</form>\n\n\n\n";
 
 /***/ },
-/* 112 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3489,28 +3860,48 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
+	var PageSide = __webpack_require__(104);
+	var Abstract = __webpack_require__(108);
+	var Share = __webpack_require__(110);
 	
 	var About = Vue.extend({
-	  template: __webpack_require__(113),
+	  template: __webpack_require__(122),
 	
-	  data: function data() {},
+	  data: function data() {
+	    return {
+	      sideList: [{
+	        "name": "老子, 春秋，生卒年不详",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E8%80%81%E5%AD%90.jpg"
+	      }, {
+	        "name": "孔子，约前551 - 约前479年",
+	        "img": "http://7xu36i.com1.z0.glb.clouddn.com/%E5%AD%94%E5%AD%90.jpg"
+	      }],
+	      count: 0
+	    };
+	  },
 	
 	  methods: {},
-	  ready: function ready() {}
+	  ready: function ready() {},
+	
+	  components: {
+	    PageSide: PageSide,
+	    Abstract: Abstract,
+	    Share: Share
+	  }
 	});
 	
 	module.exports = About;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 113 */
+/* 122 */
 /***/ function(module, exports) {
 
-	module.exports = "";
+	module.exports = "<div class=\"mainpage\">\n  <div class=\"mainleft\">\n    <p>《哲学书评》成立于2016年4月，主要关注对汉语哲学界出版的新书、重要文章的评论，我们亦接受对国外出版的书籍的评论以及对学术名家的访谈。我们希望通过我们的努力能够为大家传递学术前沿思想，促进哲学业内思想交流，同时对学术环境的积淀与成熟学术系统的建构尽绵薄之力。 </p>\n    <p>本站所发文章均获得投稿作者本人授权，可在《哲学书评》其他各平台上发布。文章可自由转载与引用，转载与引用请注明出处以及作者的各项信息。所发稿件最终版权归《哲学书评》和作者所有。 </p>\n    <p>投稿请登录“投稿系统”按要求操作，接受与退稿均回复。我们尤为青睐紧扣所评书籍、条理清晰、论述严密、行文晓畅，3000字左右篇幅的学术书评。书评建议包含但不限于如下三个部分：书籍总评、每章概述（或按主题概述，可对思路、观点以及创新之处做出总结和论述），以及书籍存在的问题或不足之处。 </p>\n    <p>来稿均默认允许我们在各个平台上发布，并接受其他方可能的转载、引用等传播行为。来稿一经录用，在有资助的情况下即付稿酬，稿酬一般为所评书籍当当网定价。</p>\n    <p>团队成员均为义务性劳动，资助金充足时，会设有组稿补贴。如果您对我们的事业有兴趣，并有意加入我们，请发简历至：zhexueshuping@sina.com。目前我们接受“审稿编辑”一职的申请。我们期待您的加入！ </p>\n    <p>欢迎关注我们其他平台：</br>\n    微信公众号：zhexueshuping</br>\n    <a href=\"http://www.zhihu.com/people/zhexueshuping\">知乎专栏</a></br>\n    <a href=\"https://site.douban.com/274863/\">豆瓣小站</a></p>\n    <share></share>\n  </div>\n  <div class=\"mainright\">\n    <page-side :list=\"sideList\"></page-side>\n  </div>\n</div>";
 
 /***/ },
-/* 114 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3520,28 +3911,35 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
+	var SearchArea = __webpack_require__(105);
 	
 	var Donate = Vue.extend({
-	  template: __webpack_require__(115),
+	  template: __webpack_require__(124),
 	
-	  data: function data() {},
+	  data: function data() {
+	    return {};
+	  },
 	
 	  methods: {},
-	  ready: function ready() {}
+	  ready: function ready() {},
+	
+	  components: {
+	    SearchArea: SearchArea
+	  }
 	});
 	
 	module.exports = Donate;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 115 */
+/* 124 */
 /***/ function(module, exports) {
 
-	module.exports = "";
+	module.exports = "<div class='contri'>\n  <search-area></search-area>\n  <h2>捐助《哲学书评》的意义</h2>\n  <p>写作哲学书评在国外学界是一件蔚然成风的事情，国外的学生往往以写作哲学书评作为自己的学术起点。在写作时，作者可以认真、细致地读一本书，并带着批判性的眼光阅读著作，由此逐步形成自己的思维方式。反观国内，学生往往有着在有级别的刊物上发文的硬性指标，即便在少数没有指标的高校，学生也会因为考虑到未来的发展而功利性地写作，这导致了种种学术问题。</p>\n  <p>写作哲学书评不仅对于青年学生、学者有着重要的意义，它还有助于传递前沿动态、促进思想交流、帮助建构一个成熟的学术系统。国人往往对自己学术同仁的著作缺乏关注，一味地追求国外新颖的文献，而忽略自身学术环境的累积。通过哲学书评，我们会形成对彼此思想最基本的关注、认知和尊重。</p>\n  <p>如果您代表相关机构、从事与哲学相关的工作，或是哲学爱好者，或只是热心人，希望您在有经济基础的情况下，予以我们任意金额的资助，我们不胜感激。</p>\n  <h2>我们为什么寻求捐助</h2>\n  <p>我们希望通过予以作者一定金额的稿费的方式鼓励作者为我们提供稿件。同时，支付稿酬，也是对作者劳动基本的尊重。另外，我们平时的网站管理，以及其他与哲学相关的活动都需要经费支持。</p>\n  <h5>资金用途</h5>\n  <p>我们将筹得的资金基本用于稿酬的发放，在资金充足的情况下，印刷一定数量的《哲学书评》（不定期刊）赠送作者。</p>\n  <p>稿酬发放规则：<br/>\n  1.一般情况下，稿费为书评人所评的书籍定价；<br/>\n  2.69元封顶； <br/>\n  3.对英文书籍的书评统一稿费为50元。</p>\n  <p>在资助金充足的情况下会适当调高稿费。相反，如无资助时，则无稿费，敬请谅解。</p>\n  <h2>捐助方式</h2>\n  <p>1.您可以直接支付宝转账至：18251930226， 请说明您的转账用于资助哲学书评；如果您愿意，请留下您的基本信息；<br/>\n  2.您可以发邮件至：zhexueshuping@sina.com, 我们安排人与您主动取得联系，洽谈具体事宜；<br/>\n  3.您可以加主编微信KingChou0528（加好友时，请备注，“资助哲学书评”，与主编直接商谈）。</p>\n  <h5>我们的回报</h5>\n  <p>如果您愿意，我们将以以下方式回馈您：<br/>\n  1. 如果您资助金额较小，我们将您列入致谢名单；<br/>\n  2. 如果您资助金额在500元及以上，我们将以您的名义设立专项稿费； <br/>\n  3. 如果您是企业、机构资助者，我们将在我们各种平台上为您提供恰当的宣传或进行恰当的合作。</p>\n</div>";
 
 /***/ },
-/* 116 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3551,10 +3949,10 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
 	
 	var Comment = Vue.extend({
-	  template: __webpack_require__(117),
+	  template: __webpack_require__(126),
 	
 	  data: function data() {
 	    return {
@@ -3616,13 +4014,13 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 117 */
+/* 126 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n  <form class='form'>\n    <textarea name=\"\" v-model=\"critic\"></textarea>\n    <button @click=\"submit()\">发表评论</button>\n  </form>\n</div>";
 
 /***/ },
-/* 118 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';
@@ -3632,28 +4030,97 @@ webpackJsonp([1],[
 	var reqwest = _require.reqwest;
 	var utils = _require.utils;
 	
-	var Toast = __webpack_require__(87);
+	var Toast = __webpack_require__(91);
+	var Share = __webpack_require__(110);
 	
 	var Article = Vue.extend({
-	  template: __webpack_require__(119),
+	  template: __webpack_require__(128),
 	
-	  data: function data() {},
+	  data: function data() {
+	    return {
+	      aid: this.$route.params.id,
+	      article: {},
+	      comment: '',
+	      comments: [],
+	      name: localStorage.getItem('NAME'),
+	      token: localStorage.getItem('TOKEN')
+	    };
+	  },
 	
-	  methods: {},
-	  ready: function ready() {}
+	  methods: {
+	    submit: function submit() {
+	      var _this = this;
+	      if (!this.token) {
+	        Toast.show('请先登录');
+	        setTimeout(function () {
+	          _this.$router.go('/index/login');
+	        }, 2000);
+	        return;
+	      }
+	      if (!this.comment) {
+	        Toast.show('请填写评论');
+	        return;
+	      }
+	      reqwest({
+	        url: utils.APIPrefix() + 'comments?comment=' + this.comment + '&article_id=' + this.aid,
+	        method: 'POST',
+	        data: {
+	          comment: this.comment,
+	          article_id: this.aid
+	        },
+	        headers: {
+	          'Authorization': 'Token token=' + this.token + ',name=' + this.name
+	        }
+	      }).then(function (resp) {
+	        Toast.show("发布评论成功");
+	        setTimeout(function () {
+	          location.reload();
+	        }, 2000);
+	      }).catch(function (e) {
+	        console.error(e);
+	        Toast.show("发布评论失败");
+	      });
+	    }
+	  },
+	  ready: function ready() {
+	    var _this = this;
+	    reqwest({
+	      url: utils.APIPrefix() + 'articles/' + this.aid,
+	      method: 'GET'
+	    }).then(function (resp) {
+	      _this.article = resp.article;
+	      _this.comments = resp.comments;
+	    }).catch(function (e) {
+	      console.error(e);
+	      Toast.show("获取页面信息失败，请刷新！");
+	    });
+	    reqwest({
+	      url: utils.APIPrefix() + 'articles/' + this.aid + '/comments',
+	      method: 'GET'
+	    }).then(function (resp) {
+	      console.log(resp);
+	    }).catch(function (e) {
+	      console.error(e);
+	      Toast.show("获取评论失败");
+	    });
+	  },
+	
+	  components: {
+	    Share: Share
+	  }
 	});
 	
 	module.exports = Article;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 119 */
+/* 128 */
 /***/ function(module, exports) {
 
-	module.exports = "";
+	module.exports = "<div class=\"contri\">\n  <article class=\"hentry\">\n    <header>\n      <hgroup>\n        <h2 class=\"author\">{{article.author}}</h2>\n        <h1 class=\"entry-title\">{{article.title}}</h1>\n        <h4 class=\"bibliography\"><p>{{article.sub_title}}</p></h4>\n        <h3 class=\"reviewers\">{{article.reviewer}}</h3>\n      </hgroup>\n    </header>\n    <div class=\"entry-content\">\n      {{{article.content}}}\n    </div>\n  </article>\n  <div>\n    <h2>评论</h2>\n    <ul>\n      <li v-for=\"com in comments\">\n        \n      </li>\n    </ul>\n  </div>\n  <form class='form'>\n    <textarea name=\"\" v-model=\"comment\"></textarea>\n    <button @click=\"submit()\">发表评论</button>\n  </form>\n  \n  <share></share>\n</div>";
 
 /***/ },
-/* 120 */
+/* 129 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n  <router-view></router-view>\n</div>";

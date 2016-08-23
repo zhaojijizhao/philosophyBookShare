@@ -1,16 +1,10 @@
-<div id="alpha">
-  <article class="hentry summary" v-for="article in articles">
-    <header>
-      <hgroup>
-        <h2 class="author">{{article.author}}</h2>
-        <h1 class="entry-title"><a v-link="{path:'/index/article/'+article.id}">{{article.title}}</a></h1>
-        <h3 class="publisher">{{article.sub_title}}</h3>
-        <h4 class="reviewers"><span class="reviewed-by"></span>{{article.reviewer}}</h4>
-        <h5 class="publish-info"></h5>
-      </hgroup>
-    </header>
-    <div class="edition">{{article.published_at}}</div>
-  </article>
-
-  <br><br><br><br><div class="bshare-custom"><div class="bsPromo bsPromo2"></div><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count" style="float: none;">5</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+<div class="mainpage">
+  <div class="mainleft">
+    <h2 class="most-recent">学子问答</h2>
+    <abstract v-for="article in articles" :article="article"></abstract>
+    <share></share>
+  </div>
+  <div class="mainright">
+    <page-side :list="sideList"></page-side>
+  </div>
 </div>
