@@ -1,3 +1,8 @@
+# Cortex
+neurons
+.cortex
+
+
 # Numerous always-ignore extensions
 *.bak
 *.patch
@@ -36,6 +41,8 @@ thumbs.db
 .svn
 .CVS
 .idea
+dist/
 node_modules/
 jscoverage_lib/
 uploads
+testTheme.js
